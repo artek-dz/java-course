@@ -1,0 +1,493 @@
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course
+$ git clone https://github.com/artek-dz/java-course.git
+Cloning into 'java-course'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 860 bytes | 30.00 KiB/s, done.
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course
+$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course
+$ ..
+bash: ..: command not found
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course
+$ cd ..
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects
+$ git clone https://github.com/artek-dz/java-course.git
+Cloning into 'java-course'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 860 bytes | 22.00 KiB/s, done.
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects
+$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects
+$ cd java-course
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git add .
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git commit -m "lessons 1-3, assignments 1-2"
+[master 27d3ddc] lessons 1-3, assignments 1-2
+ 33 files changed, 549 insertions(+)
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/workspace.xml
+ create mode 100644 java-course.iml
+ create mode 100644 src/assign1/GreetUser.java
+ create mode 100644 src/assign1/Operations.java
+ create mode 100644 src/assign1/PrintTextFiveTimes.java
+ create mode 100644 src/assign1/PrintTextFiveTimesWithLoop.java
+ create mode 100644 src/assign1/Quiz.java
+ create mode 100644 src/assign1/SimpleAlgebra.java
+ create mode 100644 src/assign1/SumTwoNumbers.java
+ create mode 100644 src/assign2/ArgumentPrinter.java
+ create mode 100644 src/assign2/Counter.java
+ create mode 100644 src/assign2/CounterDown.java
+ create mode 100644 src/assign2/DaysOfWeek.java
+ create mode 100644 src/assign2/InputCheck.java
+ create mode 100644 src/assign2/PasswordVerification.java
+ create mode 100644 src/assign2/SimpleSwap.java
+ create mode 100644 src/assign2/Swap.java
+ create mode 100644 src/assign2/TrafficLight.java
+ create mode 100644 src/assign2/TriangleChecker.java
+ create mode 100644 src/assign2/WeatherForecast.java
+ create mode 100644 src/assign2/WeatherForecastWithLoop.java
+ create mode 100644 src/lesson1/HelloWorldApplication.java
+ create mode 100644 src/lesson1/HelloWorldApplication2.java
+ create mode 100644 src/lesson1/NewHelloApplication.java
+ create mode 100644 src/lesson1/test.java
+ create mode 100644 src/lesson2/ArraysDemo.java
+ create mode 100644 src/lesson2/ConditionChecker.java
+ create mode 100644 src/lesson2/GreetingApp.java
+ create mode 100644 src/lesson2/HelloIdea.java
+ create mode 100644 src/lesson2/LoopDemo.java
+ create mode 100644 src/lesson3/FindMaxElement.java
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git push origin master
+Enumerating objects: 43, done.
+Counting objects: 100% (43/43), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (40/40), done.
+Writing objects: 100% (42/42), 8.76 KiB | 996.00 KiB/s, done.
+Total 42 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), done.
+To https://github.com/artek-dz/java-course.git
+   56e0e4a..27d3ddc  master -> master
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .idea/workspace.xml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git add .
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git commit -m "lassignments 3, FindMinElement"
+[master 78e8262] lassignments 3, FindMinElement
+ 3 files changed, 74 insertions(+), 1 deletion(-)
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 src/assign3/FindMinElement.java
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git push origin master
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 2.13 KiB | 1.06 MiB/s, done.
+Total 8 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/artek-dz/java-course.git
+   27d3ddc..78e8262  master -> master
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git add .
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git commit -m "assignments 3, LetterPrinter1, LetterPrinter2"
+[master 35cdc94] assignments 3, LetterPrinter1, LetterPrinter2
+ 5 files changed, 191 insertions(+), 11 deletions(-)
+ create mode 100644 .idea/uiDesigner.xml
+ create mode 100644 out/production/java-course/META-INF/java-course.kotlin_module
+ create mode 100644 src/assign3/LetterPrinter1.java
+ create mode 100644 src/assign3/LetterPrinter2.java
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git push origin master
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (14/14), 2.24 KiB | 763.00 KiB/s, done.
+Total 14 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 4 local objects.
+To https://github.com/artek-dz/java-course.git
+   78e8262..35cdc94  master -> master
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git add .
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git commit -m "assignments 3, AverageCalculator"
+[master 7a68c3e] assignments 3, AverageCalculator
+ 2 files changed, 18 insertions(+), 2 deletions(-)
+ create mode 100644 src/assign3/AverageCalculator.java
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git push origin master
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 802 bytes | 802.00 KiB/s, done.
+Total 7 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+To https://github.com/artek-dz/java-course.git
+   35cdc94..7a68c3e  master -> master
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git add .
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git add .
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git add .
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git commit -m "assignments 3, PrintPrimeNumbers"
+[master 1e3d995] assignments 3, PrintPrimeNumbers
+ 3 files changed, 86 insertions(+), 18 deletions(-)
+ create mode 100644 src/assign3/PrimeNumber2.java
+ create mode 100644 src/assign3/PrintPrimeNumbers.java
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git push origin master
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 1.09 KiB | 372.00 KiB/s, done.
+Total 8 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), completed with 5 local objects.
+To https://github.com/artek-dz/java-course.git
+   7a68c3e..1e3d995  master -> master
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git add .
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git commit -m "assignment 3, Update PrintPrimeNumbers"
+[master cf71a93] assignment 3, Update PrintPrimeNumbers
+ 1 file changed, 20 deletions(-)
+ delete mode 100644 src/assign3/PrimeNumber2.java
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 368 bytes | 122.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/artek-dz/java-course.git
+   1e3d995..cf71a93  master -> master
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git add .
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git commit -m "assignment 3, updated versions of LetterPrint1, and LetterPrint2"
+[master 52ea59d] assignment 3, updated versions of LetterPrint1, and LetterPrint2
+ 3 files changed, 30 insertions(+), 25 deletions(-)
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git push origin master
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 967 bytes | 241.00 KiB/s, done.
+Total 8 (delta 7), reused 0 (delta 0)
+remote: Resolving deltas: 100% (7/7), completed with 7 local objects.
+To https://github.com/artek-dz/java-course.git
+   cf71a93..52ea59d  master -> master
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   src/assign3/SumCalculator.java
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .idea/workspace.xml
+        modified:   src/assign3/SumCalculator.java
+
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git commit -m "assignment 3, SumCalculator"
+[master 939654d] assignment 3, SumCalculator
+ 1 file changed, 4 insertions(+)
+ create mode 100644 src/assign3/SumCalculator.java
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git push origin master
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 461 bytes | 230.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/artek-dz/java-course.git
+   52ea59d..939654d  master -> master
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git add .
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git commit -m "assignment 3, SumCalculator"
+[master 5e905ef] assignment 3, SumCalculator
+ 2 files changed, 13 insertions(+), 2 deletions(-)
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git push origin master
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 750 bytes | 250.00 KiB/s, done.
+Total 7 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+To https://github.com/artek-dz/java-course.git
+   939654d..5e905ef  master -> master
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git push origin master
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 572 bytes | 143.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/artek-dz/java-course.git
+   5e905ef..80f8fc4  master -> master
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ ^C
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git add DiscountCalculator.java
+fatal: pathspec 'DiscountCalculator.java' did not match any files
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git add .
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git commit -m "assignment 3, DiscountCalculator, v1"
+[master 363a03d] assignment 3, DiscountCalculator, v1
+ 2 files changed, 72 insertions(+), 18 deletions(-)
+ create mode 100644 src/assign3/DiscountCalculator.java
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git push origin master
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.44 KiB | 736.00 KiB/s, done.
+Total 7 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+To https://github.com/artek-dz/java-course.git
+   b97f86b..363a03d  master -> master
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ cd src
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course/src (master)
+$ cd assign3
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course/src/assign3 (master)
+$ git checkout DiscountCalculator.java
+Updated 0 paths from the index
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course/src/assign3 (master)
+$ git log
+commit 363a03db6c2de84deee0aac81ad923135bf011df (HEAD -> master, origin/master, origin/HEAD)
+Author: artek-dz <artek.dz3007@gmail.com>
+Date:   Sat Mar 21 17:26:32 2020 +0100
+
+    assignment 3, DiscountCalculator, v1
+
+commit b97f86b9ff716b75b1635824d62008383161498d
+Author: artek-dz <artek.dz3007@gmail.com>
+Date:   Sat Mar 21 17:03:03 2020 +0100
+
+    assignent 3, RandomArray without loop but using Arrays.setAll
+
+commit 75061612a06f790a92a0c27aacf8fc6dacf31a65
+Author: artek-dz <artek.dz3007@gmail.com>
+Date:   Sat Mar 21 16:56:21 2020 +0100
+
+    assignent 3, RandomArray
+
+commit 80f8fc4f829160165ec9ea22f2f261a4e4009859
+Author: artek-dz <artek.dz3007@gmail.com>
+Date:   Sat Mar 21 16:45:32 2020 +0100
+
+    assignent 3, ArgumentPrinter in reverse
+
+commit 5e905ef5fb48ee35439bbd5242648c5d5002b3f1
+Author: artek-dz <artek.dz3007@gmail.com>
+Date:   Sat Mar 21 16:41:21 2020 +0100
+
+    assignment 3, SumCalculator
+
+commit 939654d9ea8b2301c98c4f7d4907c2b8b02d8041
+Author: artek-dz <artek.dz3007@gmail.com>
+Date:   Sat Mar 21 16:40:16 2020 +0100
+
+    assignment 3, SumCalculator
+
+commit 52ea59de9d1769b129c641b9a1fbe5e56f695e03
+Author: artek-dz <artek.dz3007@gmail.com>
+Date:   Sat Mar 21 16:28:58 2020 +0100
+
+    assignment 3, updated versions of LetterPrint1, and LetterPrint2
+
+commit cf71a9346a96e022141e78d7f5c7645d3a4d48d5
+Author: artek-dz <artek.dz3007@gmail.com>
+Date:   Sat Mar 21 15:37:15 2020 +0100
+
+    assignment 3, Update PrintPrimeNumbers
+
+commit 1e3d9955deaf9886f804e0c2df66c33f4744ecbb
+Author: artek-dz <artek.dz3007@gmail.com>
+Date:   Sat Mar 21 15:35:39 2020 +0100
+
+    assignments 3, PrintPrimeNumbers
+
+:
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course/src/assign3 (master)
+$ ^C
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course/src/assign3 (master)
+git checkout
+bash: gigit: command not found
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course/src/assign3 (master)
+$ git checkout
+Your branch is up to date with 'origin/master'.
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course/src/assign3 (master)
+$ git checkout
+Your branch is up to date with 'origin/master'.
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course/src/assign3 (master)
+$ git checkout b97f86b9ff716b75b1635824d62008383161498d
+Note: switching to 'b97f86b9ff716b75b1635824d62008383161498d'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at b97f86b assignent 3, RandomArray without loop but using Arrays.setAll
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course/src/assign3 ((b97f86b...))
+$ git log
+commit b97f86b9ff716b75b1635824d62008383161498d (HEAD)
+Author: artek-dz <artek.dz3007@gmail.com>
+Date:   Sat Mar 21 17:03:03 2020 +0100
+
+    assignent 3, RandomArray without loop but using Arrays.setAll
+
+commit 75061612a06f790a92a0c27aacf8fc6dacf31a65
+Author: artek-dz <artek.dz3007@gmail.com>
+Date:   Sat Mar 21 16:56:21 2020 +0100
+
+    assignent 3, RandomArray
+
+commit 80f8fc4f829160165ec9ea22f2f261a4e4009859
+Author: artek-dz <artek.dz3007@gmail.com>
+Date:   Sat Mar 21 16:45:32 2020 +0100
+
+    assignent 3, ArgumentPrinter in reverse
+
+commit 5e905ef5fb48ee35439bbd5242648c5d5002b3f1
+Author: artek-dz <artek.dz3007@gmail.com>
+Date:   Sat Mar 21 16:41:21 2020 +0100
+
+    assignment 3, SumCalculator
+
+commit 939654d9ea8b2301c98c4f7d4907c2b8b02d8041
+Author: artek-dz <artek.dz3007@gmail.com>
+Date:   Sat Mar 21 16:40:16 2020 +0100
+
+    assignment 3, SumCalculator
+
+commit 52ea59de9d1769b129c641b9a1fbe5e56f695e03
+Author: artek-dz <artek.dz3007@gmail.com>
+Date:   Sat Mar 21 16:28:58 2020 +0100
+
+    assignment 3, updated versions of LetterPrint1, and LetterPrint2
+
+commit cf71a9346a96e022141e78d7f5c7645d3a4d48d5
+Author: artek-dz <artek.dz3007@gmail.com>
+Date:   Sat Mar 21 15:37:15 2020 +0100
+
+    assignment 3, Update PrintPrimeNumbers
+
+commit 1e3d9955deaf9886f804e0c2df66c33f4744ecbb
+Author: artek-dz <artek.dz3007@gmail.com>
+Date:   Sat Mar 21 15:35:39 2020 +0100
+
+    assignments 3, PrintPrimeNumbers
+
+commit 7a68c3e0f9aa69edd50e9c505a7ccd18672a8807
+Author: artek-dz <artek.dz3007@gmail.com>
+Date:   Sat Mar 21 15:03:10 2020 +0100
+
+    assignments 3, AverageCalculator
+
+commit 35cdc948d395c13cee2ea3304a9381b471d5e3d0
+Author: artek-dz <artek.dz3007@gmail.com>
