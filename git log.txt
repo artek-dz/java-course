@@ -491,3 +491,101 @@ Date:   Sat Mar 21 15:03:10 2020 +0100
 
 commit 35cdc948d395c13cee2ea3304a9381b471d5e3d0
 Author: artek-dz <artek.dz3007@gmail.com>
+
+===========FIXING DEATCHED HEAD==============
+
+artek@ADz-Surface-Pro MINGW64 ~
+$ cd IdeaProjects
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects
+$ cd java-course
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course ((b97f86b...))
+$ git add .
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course ((b97f86b...))
+$ git commit -m "git log added"
+[detached HEAD 59b3da7] git log added
+ 1 file changed, 493 insertions(+)
+ create mode 100644 gitlog.txt
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course ((59b3da7...))
+$ git push orgin master
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course ((59b3da7...))
+$ git push origin master
+Everything up-to-date
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course ((59b3da7...))
+$ git add .
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course ((59b3da7...))
+$ git commit -m "git log added"
+HEAD detached from b97f86b
+nothing to commit, working tree clean
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course ((59b3da7...))
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+        gitlog.txt
+Please commit your changes or stash them before you switch branches.
+error: Your local changes to the following files would be overwritten by checkout:
+        .idea/workspace.xml
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course ((59b3da7...))
+$ git add .
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course ((59b3da7...))
+$ git commit -m "git log added"
+[detached HEAD 794f932] git log added
+ 1 file changed, 14 insertions(+), 2 deletions(-)
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course ((794f932...))
+$ git push origin master
+Everything up-to-date
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course ((794f932...))
+$ git checkout master
+Warning: you are leaving 2 commits behind, not connected to
+any of your branches:
+
+  794f932 git log added
+  59b3da7 git log added
+
+If you want to keep them by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> 794f932
+
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git add .
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git commit -m "git log added"
+[master 168e0db] git log added
+ 1 file changed, 493 insertions(+)
+ create mode 100644 git log.txt
+
+artek@ADz-Surface-Pro MINGW64 ~/IdeaProjects/java-course (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 3.09 KiB | 633.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/artek-dz/java-course.git
+   363a03d..168e0db  master -> master
+
+
