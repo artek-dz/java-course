@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31f6e6cd-7710-46cc-b268-a25976ebcf29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign3/FindMinElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign3/LetterPrinter1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign3/LetterPrinter2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +34,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.LetterPrinter2">
     <configuration name="FindMinElement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="assign3.FindMinElement" />
       <module name="java-course" />
@@ -48,8 +48,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LetterPrinter1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign3.LetterPrinter1" />
+      <module name="java-course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LetterPrinter2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign3.LetterPrinter2" />
+      <module name="java-course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LetterPrinter2" />
+        <item itemvalue="Application.LetterPrinter1" />
         <item itemvalue="Application.FindMinElement" />
       </list>
     </recent_temporary>
@@ -68,22 +96,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1314" height="213" key="GridCell.Tab.0.bottom" timestamp="1584797288201">
+    <state width="1191" height="189" key="GridCell.Tab.0.bottom" timestamp="1584798282941">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="213" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1584797288201" />
-    <state width="1314" height="213" key="GridCell.Tab.0.center" timestamp="1584797288201">
+    <state width="1191" height="189" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1584798282941" />
+    <state width="1191" height="189" key="GridCell.Tab.0.center" timestamp="1584798282940">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="213" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1584797288201" />
-    <state width="1314" height="213" key="GridCell.Tab.0.left" timestamp="1584797288201">
+    <state width="1191" height="189" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1584798282940" />
+    <state width="1191" height="189" key="GridCell.Tab.0.left" timestamp="1584798282940">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="213" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1584797288201" />
-    <state width="1314" height="213" key="GridCell.Tab.0.right" timestamp="1584797288201">
+    <state width="1191" height="189" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1584798282940" />
+    <state width="1191" height="189" key="GridCell.Tab.0.right" timestamp="1584798282940">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="213" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1584797288201" />
+    <state width="1191" height="189" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1584798282940" />
     <state x="400" y="218" key="com.intellij.ide.util.TipDialog" timestamp="1584794674421">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
