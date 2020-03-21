@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31f6e6cd-7710-46cc-b268-a25976ebcf29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assign3/SumCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign3/DiscountCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +18,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="artek-dz &lt;artek.dz3007@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZRFWTvKhSn84elqWoNWv7ZyaaN" />
@@ -33,7 +38,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="Application.LetterPrinter2">
+  <component name="RunManager" selected="Application.RandomArrayWithoutLoop">
     <configuration name="LetterPrinter1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="assign3.LetterPrinter1" />
       <module name="java-course" />
@@ -60,32 +65,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimeNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign3.PrimeNumber" />
-      <module name="java-course" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PrimeNumber1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign3.PrimeNumber1" />
-      <module name="java-course" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PrintPrimeNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="assign3.PrintPrimeNumbers" />
       <module name="java-course" />
@@ -99,13 +78,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RandomArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign3.RandomArray" />
+      <module name="java-course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RandomArrayWithoutLoop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign3.RandomArrayWithoutLoop" />
+      <module name="java-course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RandomArrayWithoutLoop" />
+        <item itemvalue="Application.RandomArray" />
         <item itemvalue="Application.LetterPrinter2" />
         <item itemvalue="Application.LetterPrinter1" />
         <item itemvalue="Application.PrintPrimeNumbers" />
-        <item itemvalue="Application.PrimeNumber" />
-        <item itemvalue="Application.PrimeNumber1" />
       </list>
     </recent_temporary>
   </component>
@@ -120,25 +125,61 @@
       <option name="presentableId" value="Default" />
       <updated>1584794030290</updated>
     </task>
+    <task id="LOCAL-00001" summary="assignent 3, ArgumentPrinter in reverse">
+      <created>1584805532329</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584805532329</updated>
+    </task>
+    <task id="LOCAL-00002" summary="assignent 3, RandomArray">
+      <created>1584806182151</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584806182151</updated>
+    </task>
+    <task id="LOCAL-00003" summary="assignent 3, RandomArray without loop but using Arrays.setAll">
+      <created>1584806584182</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584806584182</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="assignent 3, ArgumentPrinter in reverse" />
+    <MESSAGE value="assignent 3, RandomArray" />
+    <MESSAGE value="assignent 3, RandomArray without loop but using Arrays.setAll" />
+    <option name="LAST_COMMIT_MESSAGE" value="assignent 3, RandomArray without loop but using Arrays.setAll" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1191" height="189" key="GridCell.Tab.0.bottom" timestamp="1584803617690">
+    <state x="285" y="0" key="CommitChangelistDialog2" timestamp="1584806582319">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1191" height="189" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1584803617690" />
-    <state width="1191" height="189" key="GridCell.Tab.0.center" timestamp="1584803617690">
+    <state x="285" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1584806582319" />
+    <state width="1314" height="210" key="GridCell.Tab.0.bottom" timestamp="1584806614381">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1191" height="189" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1584803617690" />
-    <state width="1191" height="189" key="GridCell.Tab.0.left" timestamp="1584803617690">
+    <state width="1314" height="210" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1584806614381" />
+    <state width="1314" height="210" key="GridCell.Tab.0.center" timestamp="1584806614381">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1191" height="189" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1584803617690" />
-    <state width="1191" height="189" key="GridCell.Tab.0.right" timestamp="1584803617690">
+    <state width="1314" height="210" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1584806614381" />
+    <state width="1314" height="210" key="GridCell.Tab.0.left" timestamp="1584806614381">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1191" height="189" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1584803617690" />
+    <state width="1314" height="210" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1584806614381" />
+    <state width="1314" height="210" key="GridCell.Tab.0.right" timestamp="1584806614381">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1314" height="210" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1584806614381" />
+    <state x="177" y="108" key="Vcs.Push.Dialog.v2" timestamp="1584806590456">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="177" y="108" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1584806590456" />
     <state x="400" y="218" key="com.intellij.ide.util.TipDialog" timestamp="1584794674421">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
