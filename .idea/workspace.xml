@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31f6e6cd-7710-46cc-b268-a25976ebcf29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assign3/PrimeNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign3/PrimeNumber2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign3/LetterPrinter1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign3/LetterPrinter1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign3/LetterPrinter2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign3/LetterPrinter2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +34,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="Application.PrintPrimeNumbers">
+  <component name="RunManager" selected="Application.LetterPrinter2">
+    <configuration name="LetterPrinter1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign3.LetterPrinter1" />
+      <module name="java-course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LetterPrinter2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="assign3.LetterPrinter2" />
       <module name="java-course" />
@@ -74,19 +87,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimeNumber2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign3.PrimeNumber2" />
-      <module name="java-course" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PrintPrimeNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="assign3.PrintPrimeNumbers" />
       <module name="java-course" />
@@ -102,11 +102,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LetterPrinter2" />
+        <item itemvalue="Application.LetterPrinter1" />
         <item itemvalue="Application.PrintPrimeNumbers" />
         <item itemvalue="Application.PrimeNumber" />
         <item itemvalue="Application.PrimeNumber1" />
-        <item itemvalue="Application.PrimeNumber2" />
-        <item itemvalue="Application.LetterPrinter2" />
       </list>
     </recent_temporary>
   </component>
@@ -124,22 +124,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1191" height="189" key="GridCell.Tab.0.bottom" timestamp="1584801302899">
+    <state width="1191" height="189" key="GridCell.Tab.0.bottom" timestamp="1584803617690">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1191" height="189" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1584801302899" />
-    <state width="1191" height="189" key="GridCell.Tab.0.center" timestamp="1584801302898">
+    <state width="1191" height="189" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1584803617690" />
+    <state width="1191" height="189" key="GridCell.Tab.0.center" timestamp="1584803617690">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1191" height="189" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1584801302898" />
-    <state width="1191" height="189" key="GridCell.Tab.0.left" timestamp="1584801302898">
+    <state width="1191" height="189" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1584803617690" />
+    <state width="1191" height="189" key="GridCell.Tab.0.left" timestamp="1584803617690">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1191" height="189" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1584801302898" />
-    <state width="1191" height="189" key="GridCell.Tab.0.right" timestamp="1584801302899">
+    <state width="1191" height="189" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1584803617690" />
+    <state width="1191" height="189" key="GridCell.Tab.0.right" timestamp="1584803617690">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1191" height="189" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1584801302899" />
+    <state width="1191" height="189" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1584803617690" />
     <state x="400" y="218" key="com.intellij.ide.util.TipDialog" timestamp="1584794674421">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
