@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31f6e6cd-7710-46cc-b268-a25976ebcf29" name="Default Changelist" comment="assignment 3, BubbleSortRandomArray">
-      <change afterPath="$PROJECT_DIR$/src/assign4/BubbleSortRandomArray3.java" afterDir="false" />
+    <list default="true" id="31f6e6cd-7710-46cc-b268-a25976ebcf29" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assign4/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assign4/CatTester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign4/BubbleSortNearlySorted.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign4/BubbleSortRandomArray2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign4/BubbleSortRundomArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign4/BubbleSortRandomArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +43,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.BubbleSortNearlySorted">
+  <component name="RunManager" selected="Application.CatTester">
     <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="assign4.BubbleSort" />
       <module name="java-course" />
@@ -84,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiscountCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign3.DiscountCalculator" />
+    <configuration name="CatTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign4.CatTester" />
       <module name="java-course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assign3.*" />
+          <option name="PATTERN" value="assign4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CatTester" />
         <item itemvalue="Application.BubbleSortNearlySorted" />
         <item itemvalue="Application.BubbleSortRundomArray" />
         <item itemvalue="Application.MobilePhoneTester" />
         <item itemvalue="Application.BubbleSort" />
-        <item itemvalue="Application.DiscountCalculator" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585414045664</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="assignment 3, optimized versions of BubbleSortRandomArray">
+      <created>1585415502260</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1585415502260</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -214,33 +220,34 @@
     <MESSAGE value="BubbleSort of a random array" />
     <MESSAGE value="assignment 4, MobilePhone and MobilePhoneTester" />
     <MESSAGE value="assignment, optimized BubbleSort" />
-    <option name="LAST_COMMIT_MESSAGE" value="assignment, optimized BubbleSort" />
+    <MESSAGE value="assignment 3, optimized versions of BubbleSortRandomArray" />
+    <option name="LAST_COMMIT_MESSAGE" value="assignment 3, optimized versions of BubbleSortRandomArray" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="285" y="0" key="CommitChangelistDialog2" timestamp="1585415195985">
+    <state x="285" y="0" key="CommitChangelistDialog2" timestamp="1585415500525">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="285" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1585415195985" />
+    <state x="285" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1585415500525" />
     <state x="416" y="140" key="FileChooserDialogImpl" timestamp="1584890554108">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="416" y="140" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1584890554108" />
-    <state width="1314" height="159" key="GridCell.Tab.0.bottom" timestamp="1585414988043">
+    <state width="627" height="313" key="GridCell.Tab.0.bottom" timestamp="1585418066571">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="159" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1585414988043" />
-    <state width="1314" height="159" key="GridCell.Tab.0.center" timestamp="1585414988041">
+    <state width="627" height="313" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1585418066571" />
+    <state width="627" height="313" key="GridCell.Tab.0.center" timestamp="1585418066571">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="159" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1585414988041" />
-    <state width="1314" height="159" key="GridCell.Tab.0.left" timestamp="1585414988041">
+    <state width="627" height="313" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1585418066571" />
+    <state width="627" height="313" key="GridCell.Tab.0.left" timestamp="1585418066571">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="159" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1585414988041" />
-    <state width="1314" height="159" key="GridCell.Tab.0.right" timestamp="1585414988042">
+    <state width="627" height="313" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1585418066571" />
+    <state width="627" height="313" key="GridCell.Tab.0.right" timestamp="1585418066571">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="159" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1585414988042" />
+    <state width="627" height="313" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1585418066571" />
     <state x="433" y="85" key="RollbackChangesDialog" timestamp="1585410301198">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -249,10 +256,10 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="37" y="0" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1584890589187" />
-    <state x="177" y="108" key="Vcs.Push.Dialog.v2" timestamp="1585414051205">
+    <state x="177" y="108" key="Vcs.Push.Dialog.v2" timestamp="1585415511452">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="177" y="108" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1585414051205" />
+    <state x="177" y="108" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1585415511452" />
     <state x="400" y="218" key="com.intellij.ide.util.TipDialog" timestamp="1584891726187">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
