@@ -4,7 +4,7 @@ import javax.sound.midi.Soundbank;
 import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class BubbleSortNearlySorted {
+public class BubbleSortRandomArray2 {
     public static void main(String[] args) {
 //          int[] toSort = new int[20];
 //          Arrays.setAll(toSort, i -> ThreadLocalRandom.current().nextInt(200));

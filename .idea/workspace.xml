@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31f6e6cd-7710-46cc-b268-a25976ebcf29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assign4/BubbleSortNearlySorted.java" afterDir="false" />
+    <list default="true" id="31f6e6cd-7710-46cc-b268-a25976ebcf29" name="Default Changelist" comment="assignment 3, BubbleSortRandomArray">
+      <change afterPath="$PROJECT_DIR$/src/assign4/BubbleSortRandomArray3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign4/BubbleSortRundomArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign4/BubbleSortRundomArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign4/BubbleSortNearlySorted.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign4/BubbleSortRandomArray2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign4/BubbleSortRundomArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign4/BubbleSortRandomArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +44,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.BubbleSortRundomArray">
+  <component name="RunManager" selected="Application.BubbleSortNearlySorted">
     <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="assign4.BubbleSort" />
       <module name="java-course" />
@@ -111,8 +112,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BubbleSortRundomArray" />
         <item itemvalue="Application.BubbleSortNearlySorted" />
+        <item itemvalue="Application.BubbleSortRundomArray" />
         <item itemvalue="Application.MobilePhoneTester" />
         <item itemvalue="Application.BubbleSort" />
         <item itemvalue="Application.DiscountCalculator" />
@@ -186,7 +187,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585405841863</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="assignment, optimized BubbleSort">
+      <created>1585413699222</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1585413699222</updated>
+    </task>
+    <task id="LOCAL-00010" summary="assignment, optimized BubbleSort">
+      <created>1585414045664</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1585414045664</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -198,33 +213,34 @@
     <MESSAGE value="BubbleSort of a rundom array" />
     <MESSAGE value="BubbleSort of a random array" />
     <MESSAGE value="assignment 4, MobilePhone and MobilePhoneTester" />
-    <option name="LAST_COMMIT_MESSAGE" value="assignment 4, MobilePhone and MobilePhoneTester" />
+    <MESSAGE value="assignment, optimized BubbleSort" />
+    <option name="LAST_COMMIT_MESSAGE" value="assignment, optimized BubbleSort" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="285" y="0" key="CommitChangelistDialog2" timestamp="1585405841209">
+    <state x="285" y="0" key="CommitChangelistDialog2" timestamp="1585415195985">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="285" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1585405841209" />
+    <state x="285" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1585415195985" />
     <state x="416" y="140" key="FileChooserDialogImpl" timestamp="1584890554108">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="416" y="140" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1584890554108" />
-    <state width="1314" height="159" key="GridCell.Tab.0.bottom" timestamp="1585413572537">
+    <state width="1314" height="159" key="GridCell.Tab.0.bottom" timestamp="1585414988043">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="159" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1585413572537" />
-    <state width="1314" height="159" key="GridCell.Tab.0.center" timestamp="1585413572536">
+    <state width="1314" height="159" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1585414988043" />
+    <state width="1314" height="159" key="GridCell.Tab.0.center" timestamp="1585414988041">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="159" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1585413572536" />
-    <state width="1314" height="159" key="GridCell.Tab.0.left" timestamp="1585413572536">
+    <state width="1314" height="159" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1585414988041" />
+    <state width="1314" height="159" key="GridCell.Tab.0.left" timestamp="1585414988041">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="159" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1585413572536" />
-    <state width="1314" height="159" key="GridCell.Tab.0.right" timestamp="1585413572536">
+    <state width="1314" height="159" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1585414988041" />
+    <state width="1314" height="159" key="GridCell.Tab.0.right" timestamp="1585414988042">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="159" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1585413572536" />
+    <state width="1314" height="159" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1585414988042" />
     <state x="433" y="85" key="RollbackChangesDialog" timestamp="1585410301198">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -233,18 +249,18 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="37" y="0" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1584890589187" />
-    <state x="177" y="108" key="Vcs.Push.Dialog.v2" timestamp="1585405847656">
+    <state x="177" y="108" key="Vcs.Push.Dialog.v2" timestamp="1585414051205">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="177" y="108" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1585405847656" />
+    <state x="177" y="108" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1585414051205" />
     <state x="400" y="218" key="com.intellij.ide.util.TipDialog" timestamp="1584891726187">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="400" y="218" key="com.intellij.ide.util.TipDialog/0.0.1368.872@0.0.1368.872" timestamp="1584891726187" />
-    <state x="464" y="338" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585399467004">
+    <state x="464" y="338" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585414025791">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="464" y="338" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1368.872@0.0.1368.872" timestamp="1585399467004" />
+    <state x="464" y="338" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1368.872@0.0.1368.872" timestamp="1585414025791" />
     <state x="0" y="0" key="new project wizard" timestamp="1584888724343">
       <screen x="0" y="0" width="1368" height="872" />
     </state>

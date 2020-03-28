@@ -3,7 +3,7 @@ package assign4;
 import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class BubbleSortRundomArray {
+public class BubbleSortRandomArray {
     public static void main(String[] args) {
 //          int[] toSort = new int[20];
 //          Arrays.setAll(toSort, i -> ThreadLocalRandom.current().nextInt(200));
