@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31f6e6cd-7710-46cc-b268-a25976ebcf29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assign3/DiscountCalculator.java" afterDir="false" />
+    <list default="true" id="31f6e6cd-7710-46cc-b268-a25976ebcf29" name="Default Changelist" comment="Bubble s">
+      <change afterPath="$PROJECT_DIR$/src/assign4/BubbleSortRundomArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,10 +38,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.RandomArrayWithoutLoop">
-    <configuration name="LetterPrinter1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign3.LetterPrinter1" />
+  <component name="RunManager" selected="Application.BubbleSortRundomArray">
+    <configuration name="ArgumentPrinter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign3.ArgumentPrinter" />
       <module name="java-course" />
       <extension name="coverage">
         <pattern>
@@ -52,8 +56,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LetterPrinter2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign3.LetterPrinter2" />
+    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign4.BubbleSort" />
+      <module name="java-course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BubbleSortRundomArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign4.BubbleSortRundomArray" />
+      <module name="java-course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscountCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign3.DiscountCalculator" />
       <module name="java-course" />
       <extension name="coverage">
         <pattern>
@@ -78,38 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RandomArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign3.RandomArray" />
-      <module name="java-course" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RandomArrayWithoutLoop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign3.RandomArrayWithoutLoop" />
-      <module name="java-course" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RandomArrayWithoutLoop" />
-        <item itemvalue="Application.RandomArray" />
-        <item itemvalue="Application.LetterPrinter2" />
-        <item itemvalue="Application.LetterPrinter1" />
+        <item itemvalue="Application.BubbleSortRundomArray" />
+        <item itemvalue="Application.BubbleSort" />
+        <item itemvalue="Application.DiscountCalculator" />
+        <item itemvalue="Application.ArgumentPrinter" />
         <item itemvalue="Application.PrintPrimeNumbers" />
       </list>
     </recent_temporary>
@@ -146,43 +150,71 @@
       <option name="project" value="LOCAL" />
       <updated>1584806584182</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="assignment 3, DiscountCalculator">
+      <created>1584811337077</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584811337077</updated>
+    </task>
+    <task id="LOCAL-00005" summary="improved version, only checking for j&lt;=sqrt(n)">
+      <created>1584813186517</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1584813186517</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="assignent 3, ArgumentPrinter in reverse" />
     <MESSAGE value="assignent 3, RandomArray" />
     <MESSAGE value="assignent 3, RandomArray without loop but using Arrays.setAll" />
-    <option name="LAST_COMMIT_MESSAGE" value="assignent 3, RandomArray without loop but using Arrays.setAll" />
+    <MESSAGE value="assignment 3, DiscountCalculator" />
+    <MESSAGE value="improved version, only checking for j&lt;=sqrt(n)" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved version, only checking for j&lt;=sqrt(n)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="285" y="0" key="CommitChangelistDialog2" timestamp="1584806582319">
+    <state x="285" y="0" key="CommitChangelistDialog2" timestamp="1585399309622">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="285" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1584806582319" />
-    <state width="1314" height="210" key="GridCell.Tab.0.bottom" timestamp="1584806614381">
+    <state x="285" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1585399309622" />
+    <state x="416" y="140" key="FileChooserDialogImpl" timestamp="1584890554108">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="210" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1584806614381" />
-    <state width="1314" height="210" key="GridCell.Tab.0.center" timestamp="1584806614381">
+    <state x="416" y="140" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1584890554108" />
+    <state width="1314" height="210" key="GridCell.Tab.0.bottom" timestamp="1585399309665">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="210" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1584806614381" />
-    <state width="1314" height="210" key="GridCell.Tab.0.left" timestamp="1584806614381">
+    <state width="1314" height="210" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1585399309665" />
+    <state width="1314" height="210" key="GridCell.Tab.0.center" timestamp="1585399309665">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="210" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1584806614381" />
-    <state width="1314" height="210" key="GridCell.Tab.0.right" timestamp="1584806614381">
+    <state width="1314" height="210" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1585399309665" />
+    <state width="1314" height="210" key="GridCell.Tab.0.left" timestamp="1585399309665">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="210" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1584806614381" />
-    <state x="177" y="108" key="Vcs.Push.Dialog.v2" timestamp="1584806590456">
+    <state width="1314" height="210" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1585399309665" />
+    <state width="1314" height="210" key="GridCell.Tab.0.right" timestamp="1585399309665">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="177" y="108" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1584806590456" />
-    <state x="400" y="218" key="com.intellij.ide.util.TipDialog" timestamp="1584794674421">
+    <state width="1314" height="210" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1585399309665" />
+    <state x="37" y="0" key="SettingsEditor" timestamp="1584890589187">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="400" y="218" key="com.intellij.ide.util.TipDialog/0.0.1368.872@0.0.1368.872" timestamp="1584794674421" />
+    <state x="37" y="0" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1584890589187" />
+    <state x="177" y="108" key="Vcs.Push.Dialog.v2" timestamp="1584813244167">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="177" y="108" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1584813244167" />
+    <state x="400" y="218" key="com.intellij.ide.util.TipDialog" timestamp="1584891726187">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="400" y="218" key="com.intellij.ide.util.TipDialog/0.0.1368.872@0.0.1368.872" timestamp="1584891726187" />
+    <state x="0" y="0" key="new project wizard" timestamp="1584888724343">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="0" y="0" key="new project wizard/0.0.1368.872@0.0.1368.872" timestamp="1584888724343" />
   </component>
 </project>
