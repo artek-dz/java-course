@@ -14,21 +14,20 @@ public class BubbleSortRandomArray3 {
         int swapped;
         int count = 0;
         int j = toSort.length;
-        int lastSwapped = toSort.length;
-        while (j > 1) {
+        do {
+            int lastSwapped = 0;
             for (int i = 1; i < j; i++) {
                 if (toSort[i] < toSort[i - 1]) {
                     swapped = toSort[i - 1];
                     toSort[i - 1] = toSort[i];
                     toSort[i] = swapped;
                     lastSwapped = i;
-                } else {
-                    lastSwapped--;
                 }
             }
             count++;
             j = lastSwapped;
-        }
+        } while (j > 1);
+
         System.out.println("Sorted array:   " + Arrays.toString(toSort));
         System.out.format("It took %d loops to sort this array.", count);
     }
