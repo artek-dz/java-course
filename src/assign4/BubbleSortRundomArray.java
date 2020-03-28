@@ -5,9 +5,9 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class BubbleSortRundomArray {
     public static void main(String[] args) {
-          int[] toSort = new int[20];
-          Arrays.setAll(toSort, i -> ThreadLocalRandom.current().nextInt(200));
-//        int[] toSort = new int[] {2, 3, 4, 5, 6, 7, 8, 9, 1};
+//          int[] toSort = new int[20];
+//          Arrays.setAll(toSort, i -> ThreadLocalRandom.current().nextInt(200));
+        int[] toSort = new int[] {2, 3, 4, 5, 6, 7, 8, 9, 1};
 
         System.out.println("Unsorted array: " + Arrays.toString(toSort));
         int swapped;
