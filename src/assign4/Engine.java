@@ -4,13 +4,13 @@ public class Engine {
     private final String name;
     private double horsepower;
     private double capacity;
-    private boolean isStarted;
+    private boolean started;
 
     public Engine(String name, double horsepower, double capacity) {
         this.name = name;
         this.horsepower = horsepower;
         this.capacity = capacity;
-        this.isStarted = false;
+        this.started = false;
     }
 
     public String getName() {
@@ -26,10 +26,24 @@ public class Engine {
     }
 
     public boolean isStarted() {
-        return isStarted;
+        return started;
     }
 
-    public void turnOnOff() {
-        isStarted = !isStarted;
+    public void start(Car car) {
+        if (!started) {
+            started = true;
+            System.out.println( name + " engine has been started");
+        } else {
+            System.out.println(name + " engine has already been started in " + car.getName());
+        }
+    }
+
+    public void stop(Car car) {
+        if (started) {
+            started =  false;
+            System.out.println( name + " engine has been stopped");
+        } else {
+            System.out.println(name + " engine has already been stopped in " + car.getName());
+        }
     }
 }

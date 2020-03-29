@@ -13,6 +13,10 @@ public class Car {
         this.remainingFuel = tankCapacity;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public void tank() {
         this.remainingFuel = tankCapacity;
         System.out.println("Car " + name + " has been tanked up");
@@ -42,22 +46,15 @@ public class Car {
 
     public void startEngine() {
         if (!engine.isStarted()) {
-            engine.turnOnOff();
             System.out.println("Car " + name + " is starting " + engine.getName() + " engine");
-            System.out.println(engine.getName() + " engine has been started");
-        } else {
-            System.out.println(engine.getName() + " engine has already been started in " + name);
         }
+        engine.start(this);
     }
 
     public void stopEngine() {
         if (engine.isStarted()) {
-            engine.turnOnOff();
             System.out.println("Car " + name + " is stopping " + engine.getName() + " engine");
-            System.out.println(engine.getName() + " engine has been stopped");
-
-        } else {
-            System.out.println(engine.getName() + " engine has already been stopped in " + name);
         }
+        engine.stop(this);
     }
 }
