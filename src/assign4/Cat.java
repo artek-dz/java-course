@@ -2,15 +2,15 @@ package assign4;
 
 public class Cat {
     private final String name;
-    private boolean isHungry;
+    private boolean hungry;
 
     public Cat(String name) {
         this.name = name;
-        this.isHungry = true;
+        this.hungry = true;
     }
 
     public void isHungry() {
-        if (isHungry) {
+        if (hungry) {
             System.out.println(name + " is hungry");
         } else {
             System.out.println(name + " is not hungry");
@@ -18,9 +18,9 @@ public class Cat {
     }
 
     public void eat(String food) {
-        if (isHungry) {
+        if (hungry) {
             System.out.println(name + " is eating " + food);
-            isHungry = false;
+            hungry = false;
         } else {
             System.out.println(name + " is not hungry");
         }
@@ -32,6 +32,6 @@ public class Cat {
 
     public void sleep(int hours) {
         System.out.format(name + " is going to sleep for %d hours\n", hours);
-        isHungry = true;
+        hungry = true;
     }
 }
