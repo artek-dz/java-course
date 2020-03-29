@@ -47,14 +47,18 @@ public class Car {
     public void startEngine() {
         if (!engine.isStarted()) {
             System.out.println("Car " + name + " is starting " + engine.getName() + " engine");
+            engine.start();
+        } else {
+            System.out.println(engine.getName() + " engine has already been started in " + name);
         }
-        engine.start();
     }
 
     public void stopEngine() {
         if (engine.isStarted()) {
             System.out.println("Car " + name + " is stopping " + engine.getName() + " engine");
+            engine.stop();
+        } else {
+            System.out.println(engine.getName() + " engine has already been stopped in " + name);
         }
-        engine.stop();
     }
 }
