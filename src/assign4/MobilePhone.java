@@ -1,49 +1,51 @@
 package assign4;
 
 public class MobilePhone {
-    private final String brand; // phones can't be re-branded
-    private final String model; // phones have a specific model which can't be changed
+    private final String brand;
+    private final String model;
     private final int batteryCapacity;
     private int batteryAmount;
     private final int memory;
     private int freeMemory;
 
-    public MobilePhone(String brandAndModel, int batteryCapacity, int memory) {
-        String[] parts = brandAndModel.split(" ", 2);
-        this.brand = parts[0];
-        this.model = parts[1];
+    public String getName() {
+        return brand + " " + model;
+    }
+
+    public MobilePhone(String brand, String model, int batteryCapacity, int memory) {
+        this.brand = brand;
+        this.model = model;
         this.batteryCapacity = batteryCapacity;
-        this.batteryAmount = batteryCapacity; // phones are fully charged when created
+        this.batteryAmount = batteryCapacity;
         this.memory = memory;
-        this.freeMemory = memory; //
- //       System.out.println("Your phone is ready to be used.");
+        this.freeMemory = memory;
     }
 
     public void installApplication(String application, int memoryUsage) {
         if (freeMemory > memoryUsage) {
             freeMemory -= memoryUsage;
-            System.out.println("Application " + application + " has been installed on " + brand + " " + model + ". Remaining memory: " + freeMemory
+            System.out.println("Application " + application + " has been installed on " + this.getName() + ". Remaining memory: " + freeMemory
                     + " MB.");
         } else {
-            System.out.println("Application " + application + " can't be installed on " + brand + " " + model + ". There isn't enough memory.");
+            System.out.println("Application " + application + " can't be installed on " + this.getName() + ". There isn't enough memory.");
         }
     }
 
     public void use(String application, int hours) {
         if (batteryAmount > hours * 100) {
             batteryAmount -= hours * 100;
-            System.out.println("Application " + application + " has been ran for " + hours + " hours on " + brand + " " + model + ". Remaining battery capacity: " + batteryAmount + " mAh.");
+            System.out.println("Application " + application + " has been ran for " + hours + " hours on " + this.getName() + ". Remaining battery capacity: " + batteryAmount + " mAh.");
         } else if (batteryAmount > 0) {
             hours = batteryAmount / 100;
             batteryAmount = 0;
-            System.out.println("Application " + application + " has been ran for " + hours + " hours on " + brand + " " + model + ". Phone has been discharged.");
+            System.out.println("Application " + application + " has been ran for " + hours + " hours on " + this.getName() + ". Phone has been discharged.");
         } else {
-            System.out.println("Application " + application + " can't be run on " +  brand + " " + model + ". Phone is discharged.");
+            System.out.println("Application " + application + " can't be run on " +  this.getName() + ". Phone is discharged.");
         }
     }
 
     public void charge() {
         batteryAmount = batteryCapacity;
-        System.out.println(brand + " " + model + " has been charged. Remaining battery capacity: " + batteryAmount + " mAh.");
+        System.out.println(this.getName() + " has been charged. Remaining battery capacity: " + batteryAmount + " mAh.");
     }
 }
