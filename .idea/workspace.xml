@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31f6e6cd-7710-46cc-b268-a25976ebcf29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assign4/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign4/CatTester.java" afterDir="false" />
+    <list default="true" id="31f6e6cd-7710-46cc-b268-a25976ebcf29" name="Default Changelist" comment="assignment 3, Car with Engine">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign4/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign4/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign4/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign4/Engine.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,9 +43,9 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.CatTester">
-    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign4.BubbleSort" />
+  <component name="RunManager" selected="Application.CarTester">
+    <configuration name="BubbleSortRandomArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign4.BubbleSortRandomArray" />
       <module name="java-course" />
       <extension name="coverage">
         <pattern>
@@ -57,8 +57,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BubbleSortNearlySorted" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign4.BubbleSortNearlySorted" />
+    <configuration name="BubbleSortRandomArray3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign4.BubbleSortRandomArray3" />
       <module name="java-course" />
       <extension name="coverage">
         <pattern>
@@ -70,8 +70,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BubbleSortRundomArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign4.BubbleSortRundomArray" />
+    <configuration name="BubbleSortRandomArray4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign4.BubbleSortRandomArray4" />
       <module name="java-course" />
       <extension name="coverage">
         <pattern>
@@ -83,8 +83,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CatTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign4.CatTester" />
+    <configuration name="CarTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign4.CarTester" />
       <module name="java-course" />
       <extension name="coverage">
         <pattern>
@@ -111,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CatTester" />
-        <item itemvalue="Application.BubbleSortNearlySorted" />
-        <item itemvalue="Application.BubbleSortRundomArray" />
+        <item itemvalue="Application.CarTester" />
         <item itemvalue="Application.MobilePhoneTester" />
-        <item itemvalue="Application.BubbleSort" />
+        <item itemvalue="Application.BubbleSortRandomArray4" />
+        <item itemvalue="Application.BubbleSortRandomArray3" />
+        <item itemvalue="Application.BubbleSortRandomArray" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +207,63 @@
       <option name="project" value="LOCAL" />
       <updated>1585415502260</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="assignment 3, Cat and CatTester">
+      <created>1585418553427</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1585418553427</updated>
+    </task>
+    <task id="LOCAL-00013" summary="assignment 3, no break in BubbleSortRandomArray, BubbleSortRandomArray2 and fix to BubbleSortRandomArray3">
+      <created>1585426647135</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1585426647135</updated>
+    </task>
+    <task id="LOCAL-00014" summary="assignment 3, no break in BubbleSortRandomArray, BubbleSortRandomArray2 and fix to BubbleSortRandomArray3">
+      <created>1585431114224</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1585431114224</updated>
+    </task>
+    <task id="LOCAL-00015" summary="assignment 3, Car with Engine">
+      <created>1585473802000</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1585473802000</updated>
+    </task>
+    <task id="LOCAL-00016" summary="assignment 3, Cat class - improved naming convention of instance variables">
+      <created>1585481736430</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1585481736430</updated>
+    </task>
+    <task id="LOCAL-00017" summary="assignment 3, MobilePhone improvements">
+      <created>1585483996556</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1585483996556</updated>
+    </task>
+    <task id="LOCAL-00018" summary="assignment 3, improved Car with Engine">
+      <created>1585492397011</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1585492397011</updated>
+    </task>
+    <task id="LOCAL-00019" summary="assignment 3, Car with Engine">
+      <created>1585493042502</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1585493042502</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -221,49 +277,79 @@
     <MESSAGE value="assignment 4, MobilePhone and MobilePhoneTester" />
     <MESSAGE value="assignment, optimized BubbleSort" />
     <MESSAGE value="assignment 3, optimized versions of BubbleSortRandomArray" />
-    <option name="LAST_COMMIT_MESSAGE" value="assignment 3, optimized versions of BubbleSortRandomArray" />
+    <MESSAGE value="assignment 3, Cat and CatTester" />
+    <MESSAGE value="assignment 3, no break in BubbleSortRandomArray, BubbleSortRandomArray2 and fix to BubbleSortRandomArray3" />
+    <MESSAGE value="assignment 3, Cat class - improved naming convention of instance variables" />
+    <MESSAGE value="assignment 3, MobilePhone improvements" />
+    <MESSAGE value="assignment 3, improved Car with Engine" />
+    <MESSAGE value="assignment 3, Car with Engine" />
+    <option name="LAST_COMMIT_MESSAGE" value="assignment 3, Car with Engine" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="285" y="0" key="CommitChangelistDialog2" timestamp="1585415500525">
+    <state x="790" y="151" key="#com.intellij.ide.util.MemberChooser" timestamp="1585422811098">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="285" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1585415500525" />
+    <state x="790" y="151" key="#com.intellij.ide.util.MemberChooser/0.0.1368.872@0.0.1368.872" timestamp="1585422811098" />
+    <state x="41" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585469717250">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="41" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1368.872@0.0.1368.872" timestamp="1585469717250" />
+    <state x="278" y="0" key="CommitChangelistDialog2" timestamp="1585493041773">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="278" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1585493041773" />
     <state x="416" y="140" key="FileChooserDialogImpl" timestamp="1584890554108">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="416" y="140" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1584890554108" />
-    <state width="627" height="313" key="GridCell.Tab.0.bottom" timestamp="1585418066571">
+    <state width="1314" height="124" key="GridCell.Tab.0.bottom" timestamp="1585498675536">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="627" height="313" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1585418066571" />
-    <state width="627" height="313" key="GridCell.Tab.0.center" timestamp="1585418066571">
+    <state width="1314" height="124" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1585498675536" />
+    <state width="1314" height="124" key="GridCell.Tab.0.center" timestamp="1585498675536">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="627" height="313" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1585418066571" />
-    <state width="627" height="313" key="GridCell.Tab.0.left" timestamp="1585418066571">
+    <state width="1314" height="124" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1585498675536" />
+    <state width="1314" height="124" key="GridCell.Tab.0.left" timestamp="1585498675536">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="627" height="313" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1585418066571" />
-    <state width="627" height="313" key="GridCell.Tab.0.right" timestamp="1585418066571">
+    <state width="1314" height="124" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1585498675536" />
+    <state width="1314" height="124" key="GridCell.Tab.0.right" timestamp="1585498675536">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="627" height="313" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1585418066571" />
-    <state x="433" y="85" key="RollbackChangesDialog" timestamp="1585410301198">
+    <state width="1314" height="124" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1585498675536" />
+    <state width="1314" height="266" key="GridCell.Tab.1.bottom" timestamp="1585429012645">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="433" y="85" key="RollbackChangesDialog/0.0.1368.872@0.0.1368.872" timestamp="1585410301198" />
+    <state width="1314" height="266" key="GridCell.Tab.1.bottom/0.0.1368.872@0.0.1368.872" timestamp="1585429012645" />
+    <state width="1314" height="266" key="GridCell.Tab.1.center" timestamp="1585429012645">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1314" height="266" key="GridCell.Tab.1.center/0.0.1368.872@0.0.1368.872" timestamp="1585429012645" />
+    <state width="1314" height="266" key="GridCell.Tab.1.left" timestamp="1585429012645">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1314" height="266" key="GridCell.Tab.1.left/0.0.1368.872@0.0.1368.872" timestamp="1585429012645" />
+    <state width="1314" height="266" key="GridCell.Tab.1.right" timestamp="1585429012645">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1314" height="266" key="GridCell.Tab.1.right/0.0.1368.872@0.0.1368.872" timestamp="1585429012645" />
+    <state x="593" y="102" key="RollbackChangesDialog" timestamp="1585493147321">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="593" y="102" key="RollbackChangesDialog/0.0.1368.872@0.0.1368.872" timestamp="1585493147321" />
     <state x="37" y="0" key="SettingsEditor" timestamp="1584890589187">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="37" y="0" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1584890589187" />
-    <state x="177" y="108" key="Vcs.Push.Dialog.v2" timestamp="1585415511452">
+    <state x="177" y="108" key="Vcs.Push.Dialog.v2" timestamp="1585493046212">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="177" y="108" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1585415511452" />
-    <state x="400" y="218" key="com.intellij.ide.util.TipDialog" timestamp="1584891726187">
+    <state x="177" y="108" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1585493046212" />
+    <state x="400" y="218" key="com.intellij.ide.util.TipDialog" timestamp="1585480768324">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="400" y="218" key="com.intellij.ide.util.TipDialog/0.0.1368.872@0.0.1368.872" timestamp="1584891726187" />
+    <state x="400" y="218" key="com.intellij.ide.util.TipDialog/0.0.1368.872@0.0.1368.872" timestamp="1585480768324" />
     <state x="464" y="338" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585414025791">
       <screen x="0" y="0" width="1368" height="872" />
     </state>

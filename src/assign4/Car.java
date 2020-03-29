@@ -45,10 +45,16 @@ public class Car {
     }
 
     public void startEngine() {
-        engine.start(this);
+        if (!engine.isStarted()) {
+            System.out.println("Car " + name + " is starting " + engine.getName() + " engine");
+        }
+        engine.start();
     }
 
     public void stopEngine() {
-        engine.stop(this);
+        if (engine.isStarted()) {
+            System.out.println("Car " + name + " is stopping " + engine.getName() + " engine");
+        }
+        engine.stop();
     }
 }

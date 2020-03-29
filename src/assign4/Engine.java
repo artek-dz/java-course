@@ -29,23 +29,21 @@ public class Engine {
         return started;
     }
 
-    public void start(Car car) {
+    public void start() {
         if (!started) {
             started = true;
-            System.out.println("Car " + car.getName() + " is starting " + name + " engine");
             System.out.println( name + " engine has been started");
         } else {
-            System.out.println(name + " engine has already been started in " + car.getName());
+            System.out.println(name + " engine has already been started");
         }
     }
 
-    public void stop(Car car) {
+    public void stop() {
         if (started) {
             started =  false;
-            System.out.println("Car " + car.getName() + " is stopping " + name + " engine");
             System.out.println( name + " engine has been stopped");
         } else {
-            System.out.println(name + " engine has already been stopped in " + car.getName());
+            System.out.println(name + " engine has already been stopped");
         }
     }
 }
