@@ -1,16 +1,16 @@
 package assign5;
 
-public class FibonacciRecursion {
+public class FibonacciCalculator {
     public static void main(String[] args) {
         for (int i = 0; i < 10; i++) {
-            System.out.print(recurse(i) + " ");
+            System.out.print(fibonacci(i) + " ");
         }
     }
 
-    private static int recurse(int n) {
+    private static int fibonacci(int n) {
         if (n < 2) {
             return n;
         }
-        return recurse(n - 2) + recurse(n - 1);
+        return fibonacci(n - 2) + fibonacci(n - 1);
     }
 }

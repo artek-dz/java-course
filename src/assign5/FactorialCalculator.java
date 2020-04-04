@@ -1,16 +1,16 @@
 package assign5;
 
-public class FactorialRecursion {
+public class FactorialCalculator {
     public static void main(String[] args) {
         for (int i = 0; i < 11; i++) {
-            System.out.print(recurse(i) + " ");
+            System.out.print(factorial(i) + " ");
         }
     }
 
-    private static int recurse(int n) {
+    private static int factorial(int n) {
         if (n < 1) {
             return 1;
         }
-        return recurse(n - 1) * n;
+        return factorial(n - 1) * n;
     }
 }
