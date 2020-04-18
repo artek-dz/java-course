@@ -22,8 +22,8 @@ public class SelectionSortRandomArray {
             int sortedIndex = 0;
             for (Integer unsorted : unsortedList) {
                 if (unsorted < sorted) {
-                    sortedIndex = unsortedList.indexOf(unsorted);
                     sorted = unsorted;
+                    sortedIndex = unsortedList.indexOf(unsorted);
                 }
             }
             sortedList.addLast(sorted);
