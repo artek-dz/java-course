@@ -2,7 +2,7 @@ package assign6;
 
 import java.util.*;
 
-public class UniqueLetterFinder {
+public class UniqueListOfLettersFinder {
     public static void main(String[] args) {
         String testText = "This is a test text.";
         System.out.println(uniqueLetters(testText).toString().replaceAll("\\[|\\]",""));
