@@ -74,7 +74,7 @@ public class MergeSortRandomArray {
         return list;
     }
 
-       public static List<Integer> mergeSort(List<Integer> list, int leftIndex, int rightIndex) {
+    public static List<Integer> mergeSort(List<Integer> list, int leftIndex, int rightIndex) {
         if (leftIndex < rightIndex) {
             int m = leftIndex + (rightIndex - leftIndex) / 2;
             list = mergeSort(list, leftIndex, m);
