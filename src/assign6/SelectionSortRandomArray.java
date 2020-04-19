@@ -44,9 +44,9 @@ public class SelectionSortRandomArray {
     }
 
     private static List<Integer> selectionSort(List<Integer> list) {
-//        if (list instanceof LinkedList) {
-//            return selectionSort((LinkedList) list);
-//        }  //Comment out to optimize selection sorting for linked List
+        if (list instanceof LinkedList) {
+            return selectionSort((LinkedList) list);
+        }  //Comment this if statement to see the impact on LinkedList sorting
         for (int i = 0; i < list.size(); i++) {
             Integer swapped = list.get(i);
             Integer minimal = list.get(i);
