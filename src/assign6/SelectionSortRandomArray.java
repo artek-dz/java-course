@@ -5,61 +5,58 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class SelectionSortRandomArray {
     public static void main(String[] args) {
-        List<Integer> linked = new LinkedList<>();
-        List<Integer> array = new ArrayList<>();
+        LinkedList<Integer> linked = new LinkedList<>();
+        ArrayList<Integer> array = new ArrayList<>();
         long start;
-        for (int i = 0; i < 2000; i++) {
+        for (int i = 0; i < 10_000; i++) {
             Integer e = ThreadLocalRandom.current().nextInt(20000);
-            linked.add(e);
+            linked.addLast(e);
             array.add(e);
         }
         System.out.println("Linked list: " + linked);
-        System.out.println("===========================================");
-        start = System.currentTimeMillis();
-        System.out.println("Sorted list: " + selectionSort(linked));
-        System.out.format("Linked list sorted in %d millis \n", System.currentTimeMillis() - start);
-        System.out.println("===========================================");
-        start = System.currentTimeMillis();
-        System.out.println("Sorted list: " + selectionSort(array));
-        System.out.format("Array list sorted in %d millis \n", System.currentTimeMillis() - start);
+        selectionSort(linked);
+        selectionSort(array);
     }
 
     public static List<Integer> selectionSort(LinkedList<Integer> list) {
+        long start = System.currentTimeMillis();
         LinkedList<Integer> sorted = new LinkedList<>();
         do {
             Integer swapped = list.getFirst();
             Integer minimal = list.getFirst();
-            int j = 0;
+            int indexOfMinimal = 0;
             for (Integer element : list) {
                 if (element < minimal) {
                     minimal = element;
-                    j = list.indexOf(element);
+                    indexOfMinimal = list.indexOf(element);
                 }
             }
             sorted.addLast(minimal);
-            list.set(j, swapped);
+            list.set(indexOfMinimal, swapped);
             list.removeFirst();
         } while (!list.isEmpty());
+        long end = System.currentTimeMillis();
+        System.out.format("Sorted in %d millis \n", end - start);
         return sorted;
     }
 
-    private static List<Integer> selectionSort(List<Integer> list) {
-        if (list instanceof LinkedList) {
-            return selectionSort((LinkedList) list);
-        }  //Comment this if statement to see the impact on LinkedList sorting
-        for (int i = 0; i < list.size(); i++) {
-            Integer swapped = list.get(i);
-            Integer minimal = list.get(i);
-            int j = i;
-            for (int k = i + 1; k < list.size(); k++) {
-                if (list.get(k) < minimal) {
-                    minimal = list.get(k);
-                    j = k;
+    private static List<Integer> selectionSort(ArrayList<Integer> list) {
+        long start = System.currentTimeMillis();
+        for (int indexOfSwapped = 0; indexOfSwapped < list.size(); indexOfSwapped++) {
+            Integer swapped = list.get(indexOfSwapped);
+            Integer minimal = list.get(indexOfSwapped);
+            int indexOfMinimal = indexOfSwapped;
+            for (int i = indexOfSwapped + 1; i < list.size(); i++) {
+                if (list.get(i) < minimal) {
+                    minimal = list.get(i);
+                    indexOfMinimal = i;
                 }
             }
-            list.set(i, minimal);
-            list.set(j, swapped);
+            list.set(indexOfSwapped, minimal);
+            list.set(indexOfMinimal, swapped);
         }
+        long end = System.currentTimeMillis();
+        System.out.format("Sorted in %d millis \n", end - start);
         return list;
     }
 }
