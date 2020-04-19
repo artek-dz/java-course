@@ -26,7 +26,7 @@ public class MergeSortRandomArray {
 
         LinkedList<Integer> linked = new LinkedList<>();
         ArrayList<Integer> array = new ArrayList<>();
-        long start;
+
         for (int i = 0; i < 1000; i++) {
             Integer e = ThreadLocalRandom.current().nextInt(20000);
             linked.addLast(e);
