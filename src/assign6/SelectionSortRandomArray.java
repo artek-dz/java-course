@@ -24,7 +24,7 @@ public class SelectionSortRandomArray {
         System.out.format("Array list sorted in %d millis \n", System.currentTimeMillis() - start);
     }
 
-    public static LinkedList<Integer> selectionSort(LinkedList<Integer> list) {
+    public static List<Integer> selectionSort(LinkedList<Integer> list) {
         LinkedList<Integer> sorted = new LinkedList<>();
         do {
             Integer swapped = list.getFirst();
