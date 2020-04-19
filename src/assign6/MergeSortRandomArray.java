@@ -64,22 +64,22 @@ public class MergeSortRandomArray {
         return merge;
     }
 
-    public static List<Integer> merge(List<Integer> list, int l, int m, int r) {
-        List<Integer> left = list.subList(l, m + 1);
-        List<Integer> right = list.subList(m + 1, r + 1);
+    public static List<Integer> merge(List<Integer> list, int leftIndex, int midIndex, int rightIndex) {
+        List<Integer> left = list.subList(leftIndex, midIndex + 1);
+        List<Integer> right = list.subList(midIndex + 1, rightIndex + 1);
         List<Integer> merged = merge(left, right);
-        for (int i = l; i < r + 1; i++) {
-            list.set(i, merged.get(i - l));
+        for (int i = leftIndex; i < rightIndex + 1; i++) {
+            list.set(i, merged.get(i - leftIndex));
         }
         return list;
     }
 
-    public static List<Integer> mergeSort(List<Integer> list, int l, int r) {
-        if (l < r) {
-            int m = l + (r - l) / 2;
-            list = mergeSort(list, l, m);
-            list = mergeSort(list, m + 1, r);
-            list = merge(list, l, m, r);
+       public static List<Integer> mergeSort(List<Integer> list, int leftIndex, int rightIndex) {
+        if (leftIndex < rightIndex) {
+            int m = leftIndex + (rightIndex - leftIndex) / 2;
+            list = mergeSort(list, leftIndex, m);
+            list = mergeSort(list, m + 1, rightIndex);
+            list = merge(list, leftIndex, m, rightIndex);
         }
         return list;
     }
