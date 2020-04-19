@@ -67,9 +67,9 @@ public class MergeSortRandomArray {
     public static List<Integer> merge(List<Integer> list, int leftIndex, int midIndex, int rightIndex) {
         List<Integer> left = list.subList(leftIndex, midIndex + 1);
         List<Integer> right = list.subList(midIndex + 1, rightIndex + 1);
-        List<Integer> merged = merge(left, right);
-        for (int i = leftIndex; i < rightIndex + 1; i++) {
-            list.set(i, merged.get(i - leftIndex));
+        List<Integer> merge = merge(left, right);
+        for (int mergeIndex = leftIndex; mergeIndex < rightIndex + 1; mergeIndex++) {
+            list.set(mergeIndex, merge.get(mergeIndex - leftIndex));
         }
         return list;
     }
