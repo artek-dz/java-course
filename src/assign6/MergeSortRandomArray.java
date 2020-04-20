@@ -37,7 +37,35 @@ public class MergeSortRandomArray {
 
     }
 
-    public static List<Integer> merge(List<Integer> left, List<Integer> right) {
+    public static List<Integer> mergeSort(List<Integer> list) {
+        long start = System.currentTimeMillis();
+        list = mergeSort(list, 0, list.size() - 1);
+        long end = System.currentTimeMillis();
+        System.out.format("Sorted in %d millis \n", end - start);
+        return list;
+    }
+
+    private static List<Integer> mergeSort(List<Integer> list, int leftIndex, int rightIndex) {
+        if (leftIndex < rightIndex) {
+            int midIndex = leftIndex + (rightIndex - leftIndex) / 2;
+            list = mergeSort(list, leftIndex, midIndex);
+            list = mergeSort(list, midIndex + 1, rightIndex);
+            list = merge(list, leftIndex, midIndex, rightIndex);
+        }
+        return list;
+    }
+
+    private static List<Integer> merge(List<Integer> list, int leftIndex, int midIndex, int rightIndex) {
+        List<Integer> left = list.subList(leftIndex, midIndex + 1);
+        List<Integer> right = list.subList(midIndex + 1, rightIndex + 1);
+        List<Integer> merge = merge(left, right);
+        for (int mergeIndex = leftIndex; mergeIndex < rightIndex + 1; mergeIndex++) {
+            list.set(mergeIndex, merge.get(mergeIndex - leftIndex));
+        }
+        return list;
+    }
+
+    private static List<Integer> merge(List<Integer> left, List<Integer> right) {
         int leftSize = left.size();
         int leftIndex = 0;
         int rightSize = right.size();
@@ -62,33 +90,5 @@ public class MergeSortRandomArray {
             rightIndex++;
         }
         return merge;
-    }
-
-    public static List<Integer> merge(List<Integer> list, int leftIndex, int midIndex, int rightIndex) {
-        List<Integer> left = list.subList(leftIndex, midIndex + 1);
-        List<Integer> right = list.subList(midIndex + 1, rightIndex + 1);
-        List<Integer> merge = merge(left, right);
-        for (int mergeIndex = leftIndex; mergeIndex < rightIndex + 1; mergeIndex++) {
-            list.set(mergeIndex, merge.get(mergeIndex - leftIndex));
-        }
-        return list;
-    }
-
-    public static List<Integer> mergeSort(List<Integer> list, int leftIndex, int rightIndex) {
-        if (leftIndex < rightIndex) {
-            int midIndex = leftIndex + (rightIndex - leftIndex) / 2;
-            list = mergeSort(list, leftIndex, midIndex);
-            list = mergeSort(list, midIndex + 1, rightIndex);
-            list = merge(list, leftIndex, midIndex, rightIndex);
-        }
-        return list;
-    }
-
-    public static List<Integer> mergeSort(List<Integer> list) {
-        long start = System.currentTimeMillis();
-        list = mergeSort(list, 0, list.size() - 1);
-        long end = System.currentTimeMillis();
-        System.out.format("Sorted in %d millis \n", end - start);
-        return list;
     }
 }
