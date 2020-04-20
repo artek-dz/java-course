@@ -26,4 +26,24 @@ public class Processor implements Cloneable{
         cloned.name = this.name + " (clone)";
         return cloned;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getFrequency() {
+        return frequency;
+    }
+
+    public void setFrequency(double frequency) {
+        this.frequency = frequency;
+    }
+
+    public int getCoreNumber() {
+        return coreNumber;
+    }
+
+    public void setCoreNumber(int coreNumber) {
+        this.coreNumber = coreNumber;
+    }
 }

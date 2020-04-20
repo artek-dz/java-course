@@ -15,6 +15,26 @@ public class HardDrive implements Cloneable {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+
     @Override
     public String toString() {
         return String.format("Hard drive " + name + " is " + type + " and has %d GB", capacity);
