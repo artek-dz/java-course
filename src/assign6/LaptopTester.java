@@ -19,10 +19,13 @@ public class LaptopTester {
         System.out.println(surface2.getHardDrive());
 
         System.out.println("==============testing===============");
-
+        surface2.setDisplaySize(15);
         surface2.getProcessor().setName("Intel Core i5-1035g4");
 
+        System.out.println(surface.getDisplaySize());
         System.out.println(surface.getProcessor().getName());
+
+        System.out.println(surface2.getDisplaySize());
         System.out.println(surface2.getProcessor().getName());
 
     }
