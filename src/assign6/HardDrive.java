@@ -1,6 +1,6 @@
 package assign6;
 
-public class HardDrive {
+public class HardDrive implements Cloneable {
     private String name;
     private String type;
     private int capacity;
@@ -18,5 +18,12 @@ public class HardDrive {
     @Override
     public String toString() {
         return String.format("Hard drive " + name + " is " + type + " and has %d GB", capacity);
+    }
+
+    @Override
+    protected HardDrive clone() throws CloneNotSupportedException {
+        HardDrive cloned = (HardDrive) super.clone();
+        cloned.name = this.name + " (clone)";
+        return cloned;
     }
 }

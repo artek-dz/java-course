@@ -11,8 +11,7 @@ public class LaptopTester {
         System.out.println(surface.getHardDrive());
 
         System.out.println("==============cloning===============");
-        Laptop surface2;
-        surface2 = (Laptop) surface.clone();
+        Laptop  surface2 = surface.clone();
 
         System.out.println(surface2.hashCode());
         System.out.println(surface2);

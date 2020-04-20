@@ -15,6 +15,26 @@ public class Laptop implements Cloneable {
         this.randomAccessMemory = randomAccessMemory;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setProcessor(Processor processor) {
+        this.processor = processor;
+    }
+
+    public void setHardDrive(HardDrive hardDrive) {
+        this.hardDrive = hardDrive;
+    }
+
+    public void setDisplaySize(int displaySize) {
+        this.displaySize = displaySize;
+    }
+
+    public void setRandomAccessMemory(int randomAccessMemory) {
+        this.randomAccessMemory = randomAccessMemory;
+    }
+
     public String getName() {
         return name;
     }
@@ -41,13 +61,11 @@ public class Laptop implements Cloneable {
                 + hardDrive.getName() + " hard drive, %d inch display and %d GB RAM", displaySize, randomAccessMemory);
     }
     @Override
-    protected Object clone() throws CloneNotSupportedException {
+    protected Laptop clone() throws CloneNotSupportedException {
         Laptop cloned = (Laptop) super.clone();
         cloned.name = this.name + " (clone)";
-        cloned.processor = this.processor;
-        cloned.hardDrive = this.hardDrive;
-        cloned.displaySize = this.displaySize;
-        cloned.randomAccessMemory = this.randomAccessMemory;
+        cloned.setProcessor(cloned.getProcessor().clone());
+        cloned.setHardDrive(cloned.getHardDrive().clone());
         return cloned;
     }
 }
