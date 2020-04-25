@@ -19,16 +19,9 @@ public class OnlineStoreTester {
 
         OnlineStore onlineStore = new OnlineStore("żabka", catalogue);
 
-        onlineStore.sortCatalogue();
-
-        Comparator<Item> lowestFirst = new ItemByPrice();
-        Comparator<Item> highestFirst = new ItemByPrice().reversed();
-        Comparator<Item> sortedAtoZ = new ItemByName();
-        Comparator<Item> sortedZtoA = new ItemByName().reversed();
-
-        onlineStore.sortCatalogue(lowestFirst);
-        onlineStore.sortCatalogue(highestFirst);
-        onlineStore.sortCatalogue(sortedAtoZ);
-        onlineStore.sortCatalogue(sortedZtoA);
+        onlineStore.sortCatalogueLowestPriceFirst();
+        onlineStore.sortCatalogueHighestPriceFirst();
+        onlineStore.sortCatalogueByNameAtoZ();
+        onlineStore.sortCatalogueByNameZtoA();
     }
 }
