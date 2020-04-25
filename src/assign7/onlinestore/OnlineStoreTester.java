@@ -17,11 +17,18 @@ public class OnlineStoreTester {
         catalogue.add(item2);
         catalogue.add(item3);
 
-        OnlineStore onlineStore = new OnlineStore("żabka",catalogue);
+        OnlineStore onlineStore = new OnlineStore("żabka", catalogue);
 
-        onlineStore.sortCatalogueLowestPriceFirst();
-        onlineStore.sortCatalogueHighestPriceFirst();
-        onlineStore.sortCatalogueAtoZ();
-        onlineStore.sortCatalogueZtoA();
+        onlineStore.sortCatalogue();
+
+        Comparator<Item> lowestFirst = new ItemByPrice();
+        Comparator<Item> highestFirst = new ItemByPrice().reversed();
+        Comparator<Item> sortedAtoZ = new ItemByName();
+        Comparator<Item> sortedZtoA = new ItemByName().reversed();
+
+        onlineStore.sortCatalogue(lowestFirst);
+        onlineStore.sortCatalogue(highestFirst);
+        onlineStore.sortCatalogue(sortedAtoZ);
+        onlineStore.sortCatalogue(sortedZtoA);
     }
 }
