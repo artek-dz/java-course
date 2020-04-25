@@ -1,4 +1,4 @@
-package assign7.parts;
+package assign7.autoservice;
 
 public class Part {
     private String brand;

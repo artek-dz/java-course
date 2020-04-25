@@ -1,4 +1,4 @@
-package assign7.parts;
+package assign7.autoservice;
 
 import java.util.TreeMap;
 
