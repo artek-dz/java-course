@@ -18,10 +18,14 @@ public class OnlineStoreTester {
         catalogue.add(item3);
 
         OnlineStore onlineStore = new OnlineStore("żabka", catalogue);
+        System.out.println("Original catalogue");
+        System.out.println(catalogue);
+        System.out.println("Sorted catalogue copies");
+        System.out.println(onlineStore.sortCatalogueLowestPriceFirst());
+        System.out.println(onlineStore.sortCatalogueHighestPriceFirst());
+        System.out.println(onlineStore.sortCatalogueByNameAtoZ());
+        System.out.println(onlineStore.sortCatalogueByNameZtoA());
 
-        onlineStore.sortCatalogueLowestPriceFirst();
-        onlineStore.sortCatalogueHighestPriceFirst();
-        onlineStore.sortCatalogueByNameAtoZ();
-        onlineStore.sortCatalogueByNameZtoA();
+
     }
 }

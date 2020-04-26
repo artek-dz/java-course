@@ -15,26 +15,25 @@ public class OnlineStore {
         return name;
     }
 
-    public void sortCatalogueLowestPriceFirst() {
-        sortCatalogue(new ItemByPrice());
+    public List<Item> sortCatalogueLowestPriceFirst() {
+        return sortCatalogue(new ItemByPrice());
     }
 
-    public void sortCatalogueHighestPriceFirst() {
-        sortCatalogue(new ItemByPrice().reversed());
+    public List<Item> sortCatalogueHighestPriceFirst() {
+        return sortCatalogue(new ItemByPrice().reversed());
     }
 
-    public void sortCatalogueByNameAtoZ() {
-        sortCatalogue(new ItemByName());
+    public List<Item> sortCatalogueByNameAtoZ() {
+        return sortCatalogue(new ItemByName());
     }
 
-    public void sortCatalogueByNameZtoA() {
-        sortCatalogue(new ItemByName().reversed());
+    public List<Item> sortCatalogueByNameZtoA() {
+        return sortCatalogue(new ItemByName().reversed());
     }
 
-    private void sortCatalogue(Comparator<Item> itemComparator) {
-        System.out.println("Before sorting: " + this.catalogue);
+    private List<Item> sortCatalogue(Comparator<Item> itemComparator) {
         List<Item> copy = new ArrayList<>(this.catalogue);
         copy.sort(itemComparator);
-        System.out.println("After sorting:  " + copy + "\n");
+        return copy;
     }
 }
