@@ -15,10 +15,6 @@ public class OnlineStore {
         return name;
     }
 
-    public List<Item> getCatalogue() {
-        return catalogue;
-    }
-
     public void sortCatalogueLowestPriceFirst() {
         sortCatalogue(new ItemByPrice());
     }
