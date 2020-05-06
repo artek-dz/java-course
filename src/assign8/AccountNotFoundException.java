@@ -1,4 +1,4 @@
-package assign8.bank.account;
+package assign8;
 
 public class AccountNotFoundException extends Exception {
 

@@ -1,10 +1,12 @@
-package assign8.bank.account;
+package assign8;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+
+import static java.time.format.DateTimeFormatter.ISO_LOCAL_DATE_TIME;
 
 public abstract class Account {
     private final int accountNumber;
@@ -43,6 +45,10 @@ public abstract class Account {
         return creditLimit;
     }
 
+    public BigDecimal getPercentage() {
+        return percentage;
+    }
+
     @Override
     public String toString() {
         return "Account{" +
@@ -73,7 +79,8 @@ public abstract class Account {
 
     protected void addTransactionLog(String logMessage) {
         LocalDateTime dateTime = LocalDateTime.now();
-        this.transactionLog.add(dateTime + ": " + logMessage);
+        System.out.println(dateTime.format(ISO_LOCAL_DATE_TIME) + ": " + logMessage);
+        this.transactionLog.add(dateTime.format(ISO_LOCAL_DATE_TIME) + ": " + logMessage);
     }
 
     private BigDecimal allowedAmount(BigDecimal amount) {
@@ -108,11 +115,18 @@ public abstract class Account {
         }
     }
 
+    public BigDecimal transfer(Account toAccount, BigDecimal amount) throws NoSufficientFundsException {
+        BigDecimal oldBalance = this.balance;
+        BigDecimal allowedWithdrawal = allowedAmount(amount);
+        BigDecimal newBalance;
+        if (amount.compareTo(allowedWithdrawal) < 1) {
+            newBalance = oldBalance.add(amount.negate());
+            addTransactionLog("Amount " + amount + " has been withdrawn");
+            return newBalance;
+        } else {
+            throw new NoSufficientFundsException(allowedWithdrawal);
+        }
+    }
 
-
-
-
-//
-//    public abstract void transferTo(Account account, BigDecimal amount);
 }
 

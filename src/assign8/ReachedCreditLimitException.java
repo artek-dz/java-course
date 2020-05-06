@@ -1,4 +1,4 @@
-package assign8.bank.account;
+package assign8;
 
 import java.math.BigDecimal;
 
