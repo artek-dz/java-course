@@ -6,22 +6,21 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-import static java.time.format.DateTimeFormatter.ISO_LOCAL_DATE_TIME;
-
 public abstract class Account {
     private final int accountNumber;
     private BigDecimal balance;
     private BigDecimal creditLimit;
     private BigDecimal percentage;
-    private List<String> transactionLog;
+    private List<TransactionLogItem> transactionLogItems;
 
     protected Account(int accountNumber, BigDecimal percentage) {
         this.accountNumber = accountNumber;
         this.balance = BigDecimal.ZERO;
         this.creditLimit = BigDecimal.ZERO;
         this.percentage = percentage;
-        transactionLog = new ArrayList<>();
-        addTransactionLog("Account " + accountNumber + " has been opened");
+        transactionLogItems = new ArrayList<>();
+        addTransactionLogItem("Account " + accountNumber + " has been opened",
+                this.balance, this.balance);
     }
 
     protected Account(int accountNumber, BigDecimal percentage, BigDecimal creditLimit) {
@@ -29,8 +28,9 @@ public abstract class Account {
         this.balance = BigDecimal.ZERO;
         this.creditLimit = creditLimit;
         this.percentage = percentage;
-        transactionLog = new ArrayList<>();
-        addTransactionLog("Account " + accountNumber + " has been opened");
+        transactionLogItems = new ArrayList<>();
+        addTransactionLogItem("Account " + accountNumber + " has been opened",
+                this.balance, this.balance);
     }
 
     public int getAccountNumber() {
@@ -77,10 +77,11 @@ public abstract class Account {
 
     public abstract BigDecimal applyPercentage();
 
-    protected void addTransactionLog(String logMessage) {
+    protected void addTransactionLogItem(String logMessage, BigDecimal oldBalance, BigDecimal newBalance) {
         LocalDateTime dateTime = LocalDateTime.now();
-        System.out.println(dateTime.format(ISO_LOCAL_DATE_TIME) + ": " + logMessage);
-        this.transactionLog.add(dateTime.format(ISO_LOCAL_DATE_TIME) + ": " + logMessage);
+        TransactionLogItem transactionLogItem = new TransactionLogItem(dateTime, logMessage, oldBalance, newBalance);
+        System.out.println(transactionLogItem.toString());
+        this.transactionLogItems.add(transactionLogItem);
     }
 
     private BigDecimal allowedAmount(BigDecimal amount) {
@@ -90,38 +91,51 @@ public abstract class Account {
         return allowedAmount;
     }
 
-    public List<String> getTransactionLog () {
-        List<String> transactionLogCopy = new ArrayList<>(this.transactionLog);
+    public List<TransactionLogItem> getTransactionLogItems() {
+        List<TransactionLogItem> transactionLogCopy = new ArrayList<>(this.transactionLogItems);
         return transactionLogCopy;
     }
 
     public BigDecimal depositMoney(BigDecimal amount) {
         BigDecimal oldBalance = this.balance;
         BigDecimal newBalance = oldBalance.add(amount);
-        addTransactionLog("Amount " + amount + " has been deposited");
+        addTransactionLogItem("Amount " + amount + " has been deposited",
+                oldBalance, newBalance);
+        this.balance = newBalance;
         return newBalance;
     }
 
-    public BigDecimal withdrawMoney(BigDecimal amount) throws NoSufficientFundsException {
+    public BigDecimal withdrawMoney(BigDecimal amount) throws NoSufficientFundsException, ReachedCreditLimitException {
         BigDecimal oldBalance = this.balance;
         BigDecimal allowedWithdrawal = allowedAmount(amount);
         BigDecimal newBalance;
         if (amount.compareTo(allowedWithdrawal) < 1) {
             newBalance = oldBalance.add(amount.negate());
-            addTransactionLog("Amount " + amount + " has been withdrawn");
+            addTransactionLogItem("Amount " + amount + " has been withdrawn",
+                    oldBalance, newBalance);
+            this.balance = newBalance;
             return newBalance;
         } else {
-            throw new NoSufficientFundsException(allowedWithdrawal);
+            if (this.creditLimit.equals(BigDecimal.ZERO)) {
+                throw new NoSufficientFundsException(allowedWithdrawal);
+            } else {
+                throw new ReachedCreditLimitException(allowedWithdrawal);
+            }
+
         }
     }
 
-    public BigDecimal transfer(Account toAccount, BigDecimal amount) throws NoSufficientFundsException {
+    public BigDecimal transfer(int toAccountNumber, BigDecimal amount) throws NoSufficientFundsException, AccountNotFoundException {
         BigDecimal oldBalance = this.balance;
         BigDecimal allowedWithdrawal = allowedAmount(amount);
         BigDecimal newBalance;
         if (amount.compareTo(allowedWithdrawal) < 1) {
             newBalance = oldBalance.add(amount.negate());
-            addTransactionLog("Amount " + amount + " has been withdrawn");
+            addTransactionLogItem("Amount " + amount + " has been transferred",
+                    oldBalance, newBalance);
+            this.balance = newBalance;
+            Account toAccount = NationalBank.NATIONAL_BANK.getAccountByNumber(toAccountNumber);
+            toAccount.depositMoney(amount);
             return newBalance;
         } else {
             throw new NoSufficientFundsException(allowedWithdrawal);

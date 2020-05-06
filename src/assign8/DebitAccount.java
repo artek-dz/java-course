@@ -11,14 +11,10 @@ public class DebitAccount extends Account {
     @Override
     public BigDecimal applyPercentage() {
         BigDecimal oldBalance = super.getBalance();
-        if (super.getBalance().compareTo(BigDecimal.ZERO) < 0) {
-            BigDecimal percentage = oldBalance.multiply(super.getPercentage());
-            percentage = percentage.negate();
-            BigDecimal newBalance = oldBalance.add(percentage);
-            super.addTransactionLog("Percentage " + percentage + " has been deducted");
-            return newBalance;
-        } else {
-            return oldBalance;
-        }
+        BigDecimal percentage = oldBalance.multiply(super.getPercentage().divide(BigDecimal.valueOf(100)));
+        BigDecimal newBalance = oldBalance.add(percentage);
+        super.addTransactionLogItem("Percentage " + percentage + " has been added",
+                oldBalance, newBalance);
+        return newBalance;
     }
 }

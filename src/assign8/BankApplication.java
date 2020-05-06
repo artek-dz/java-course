@@ -6,17 +6,55 @@ public class BankApplication {
     private static final String ALIOR_BANK_NAME = "Alior Bank";
     private static final String MBANK_BANK_NAME = "mBank";
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws AccountAlreadyExistsException, AccountNotFoundException, ReachedCreditLimitException, BankNotFoundException {
         init();
 
-        //TODO: perform topUp operations with accounts
-        //TODO: perform withDraw operations with accounts
-        //TODO: perform transferMoney between different accounts
-        //TODO: perform apply percentage on different accounts
-        //TODO: cover all the cases, not positive only
+        NationalBank nb = NationalBank.NATIONAL_BANK;
+        try {
+            nb.getBank("PKP");
+        } catch (BankNotFoundException e) {
+        }
+
+        Account account1 = nb.getAccountByNumber(12345678);
+        Account account2 = nb.getAccountByNumber(87654321);
+        account1.depositMoney(BigDecimal.valueOf(123467));
+        try {
+            account1.withdrawMoney(BigDecimal.valueOf(467));
+        } catch (NoSufficientFundsException e) {
+        }
+
+        try {
+            account1.withdrawMoney(BigDecimal.valueOf(467344546));
+        } catch (NoSufficientFundsException e) {
+        }
+
+        try {
+            account1.transfer(87654321, BigDecimal.valueOf(60000));
+        } catch (NoSufficientFundsException e) {
+        }
+
+        try {
+            account1.transfer(87654321, BigDecimal.valueOf(65000));
+        } catch (NoSufficientFundsException e) {
+        }
+        account1.applyPercentage();
+
+        try {
+            account2.withdrawMoney(BigDecimal.valueOf(70000));
+        } catch (NoSufficientFundsException e) {
+        } catch (ReachedCreditLimitException e) {
+        }
+
+        try {
+            account2.withdrawMoney(BigDecimal.valueOf(64000));
+        } catch (NoSufficientFundsException e) {
+        }
+
+        account2.applyPercentage();
+
     }
 
-    private static void init() {
+    private static void init() throws AccountAlreadyExistsException {
         NationalBank nb = NationalBank.NATIONAL_BANK;
 
         Bank alior = new Bank(ALIOR_BANK_NAME);
@@ -31,10 +69,25 @@ public class BankApplication {
         mbank.openAccount(BigDecimal.valueOf(6), BigDecimal.valueOf(5_000));
         mbank.openAccount(BigDecimal.valueOf(0.45));
 
+        Account aliorDebit = new DebitAccount(23456789, BigDecimal.valueOf(0.45));
+        mbank.openAccount(aliorDebit);
 
-//        Account mbankDeposit = new DepositAccount(BigDecimal.valueOf(0.45));
-//        Account mbankCredit = new CreditAccount(BigDecimal.valueOf(6), BigDecimal.valueOf(5_000));
-//        mbank.addAccount(mbankCredit);
-//        mbank.addAccount(mbankDeposit);
+        Account aliorCredit = new CreditAccount(98765432, BigDecimal.valueOf(6), BigDecimal.valueOf(5_000));
+        mbank.openAccount(aliorCredit);
+
+        Account mbankDebit = new DebitAccount(12345678, BigDecimal.valueOf(0.45));
+        mbank.openAccount(mbankDebit);
+
+        Account mbankCredit = new CreditAccount(87654321, BigDecimal.valueOf(6), BigDecimal.valueOf(5_000));
+        mbank.openAccount(mbankCredit);
+
+        Account mbankDebit2 = new DebitAccount(12345678, BigDecimal.valueOf(0.45));
+
+        try {
+            mbank.openAccount(mbankDebit);
+        } catch (AccountAlreadyExistsException e) {
+
+        }
+
     }
 }

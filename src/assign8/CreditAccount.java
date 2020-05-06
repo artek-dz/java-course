@@ -11,9 +11,16 @@ public class CreditAccount extends Account {
     @Override
     public BigDecimal applyPercentage() {
         BigDecimal oldBalance = super.getBalance();
-        BigDecimal percentage = oldBalance.multiply(super.getPercentage());
-        BigDecimal newBalance = oldBalance.add(percentage);
-        super.addTransactionLog("Percentage " + percentage + " has been added");
-        return newBalance;
+
+        if (super.getBalance().compareTo(BigDecimal.ZERO) < 0) {
+            BigDecimal percentage = oldBalance.multiply(super.getPercentage().divide(BigDecimal.valueOf(100)));
+            BigDecimal newBalance = oldBalance.add(percentage);
+            super.addTransactionLogItem("Percentage " + percentage + " has been deducted",
+                    oldBalance, newBalance);
+            return newBalance;
+        } else {
+            return oldBalance;
+        }
+
     }
 }

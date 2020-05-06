@@ -43,6 +43,7 @@ public class Bank {
         if (NationalBank.NATIONAL_BANK.isAccountOpen(accountNumber)) {
             throw new AccountAlreadyExistsException(accountNumber);
         }
+        this.accounts.add(account);
     }
 
     public void openAccount(BigDecimal percentage) {
