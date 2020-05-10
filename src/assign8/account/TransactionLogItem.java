@@ -1,7 +1,8 @@
-package assign8;
+package assign8.account;
 
 import java.math.BigDecimal;
 import java.time.*;
+import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 
 public class TransactionLogItem {
@@ -20,7 +21,7 @@ public class TransactionLogItem {
 
     @Override
     public String toString() {
-        return dateTime + ": " + message +
+        return dateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS")) + ": " + message +
                 ", old balance = " + oldBalance +
                 ", new balance = " + newBalance;
     }

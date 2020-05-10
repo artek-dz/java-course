@@ -1,6 +1,10 @@
 package assign8;
 
-import java.math.BigDecimal;
+import assign8.account.Account;
+import assign8.account.AccountNotFoundException;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 public class NationalBank {
@@ -12,7 +16,8 @@ public class NationalBank {
     }
 
     public void registerBank(Bank bank) {
-        System.out.println(bank.getName() + " has been registered at National Bank");
+
+        System.out.println(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS")) + ": " + bank.getName() + " has been registered at National Bank");
         this.banks.add(bank);
     }
 
@@ -23,10 +28,10 @@ public class NationalBank {
                 return bank;
             }
         }
-        throw new BankNotFoundException(bankName);
+        throw new BankNotFoundException("This bank has not been found.", bankName);
     }
 
-    public Bank getBank(int accountNumber)  {
+    public Bank getBank(int accountNumber) {
         for (Bank bank : banks) {
             if (bank.isAccountOpen(accountNumber)) {
                 return bank;
@@ -51,6 +56,6 @@ public class NationalBank {
                 return bank.getAccountByNumber(accountNumber);
             }
         }
-        throw new AccountNotFoundException(accountNumber);
+        throw new AccountNotFoundException("This account has not been found.", accountNumber);
     }
 }

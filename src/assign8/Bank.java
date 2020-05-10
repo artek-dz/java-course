@@ -1,5 +1,10 @@
 package assign8;
 
+import assign8.account.Account;
+import assign8.account.AccountAlreadyExistsException;
+import assign8.account.CreditAccount;
+import assign8.account.DebitAccount;
+
 import java.math.*;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
@@ -41,7 +46,7 @@ public class Bank {
     public void openAccount(Account account) throws AccountAlreadyExistsException {
         int accountNumber = account.getAccountNumber();
         if (NationalBank.NATIONAL_BANK.isAccountOpen(accountNumber)) {
-            throw new AccountAlreadyExistsException(accountNumber);
+            throw new AccountAlreadyExistsException("This account number already exists.", accountNumber);
         }
         this.accounts.add(account);
     }
@@ -68,7 +73,7 @@ public class Bank {
     }
 
     public Account getAccountByNumber(int accountNumber) {
-        for (Account account: accounts) {
+        for (Account account : accounts) {
             if (account.getAccountNumber() == accountNumber) {
                 return account;
             }
@@ -76,7 +81,7 @@ public class Bank {
         return null;
     }
 
-    public boolean isAccountOpen (int accountNumber) {
+    public boolean isAccountOpen(int accountNumber) {
         return accounts.contains(getAccountByNumber(accountNumber));
     }
 }

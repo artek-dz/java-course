@@ -1,6 +1,10 @@
 package assign8;
 
+import assign8.account.*;
+
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class BankApplication {
     private static final String ALIOR_BANK_NAME = "Alior Bank";
@@ -13,6 +17,9 @@ public class BankApplication {
         try {
             nb.getBank("PKP");
         } catch (BankNotFoundException e) {
+            System.out.print(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS"))
+                    + ": " + "Is " + e.getBankName() + " a correct bank name? ");
+            System.out.println( e.getMessage());
         }
 
         Account account1 = nb.getAccountByNumber(12345678);
@@ -21,33 +28,54 @@ public class BankApplication {
         try {
             account1.withdrawMoney(BigDecimal.valueOf(467));
         } catch (NoSufficientFundsException e) {
+            System.out.print(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS"))
+                    + ": " +e.getMessage());
+            System.out.println(" Available withdrawal: " + e.getAvailableFunds());
         }
 
         try {
             account1.withdrawMoney(BigDecimal.valueOf(467344546));
         } catch (NoSufficientFundsException e) {
+            System.out.print(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS"))
+                    + ": " +e.getMessage());
+            System.out.println(" Available withdrawal: " + e.getAvailableFunds());
         }
 
         try {
             account1.transfer(87654321, BigDecimal.valueOf(60000));
         } catch (NoSufficientFundsException e) {
+            System.out.print(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS"))
+                    + ": " +e.getMessage());
+            System.out.println(" Available withdrawal: " + e.getAvailableFunds());
         }
 
         try {
             account1.transfer(87654321, BigDecimal.valueOf(65000));
         } catch (NoSufficientFundsException e) {
+            System.out.print(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS"))
+                    + ": " + e.getMessage());
+            System.out.println(" Available transfer amount: " + e.getAvailableFunds());
         }
         account1.applyPercentage();
 
         try {
             account2.withdrawMoney(BigDecimal.valueOf(70000));
         } catch (NoSufficientFundsException e) {
+            System.out.print(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS"))
+                    + ": " + e.getMessage());
+            System.out.println(" Available withdrawal: " + e.getAvailableFunds());
         } catch (ReachedCreditLimitException e) {
+            System.out.print(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS"))
+                    + ": " + e.getMessage());
+            System.out.println(" Available withdrawal: " + e.getAvailableFunds());
         }
 
         try {
             account2.withdrawMoney(BigDecimal.valueOf(64000));
         } catch (NoSufficientFundsException e) {
+            System.out.print(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS"))
+                    + ": " + e.getMessage());
+            System.out.println(" Available withdrawal: " + e.getAvailableFunds());
         }
 
         account2.applyPercentage();
@@ -86,8 +114,9 @@ public class BankApplication {
         try {
             mbank.openAccount(mbankDebit);
         } catch (AccountAlreadyExistsException e) {
-
+            System.out.print(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS"))
+                    + ": " + "Is " + e.getAccountNumber() + " a correct number? ");
+            System.out.println(e.getMessage());
         }
-
     }
 }

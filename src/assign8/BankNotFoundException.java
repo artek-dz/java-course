@@ -1,8 +1,14 @@
 package assign8;
 
 public class BankNotFoundException extends Exception {
+    private String bankName;
 
-    public BankNotFoundException(String bankName) {
-        System.out.println("Bank " + bankName + " not found");;
+    public String getBankName() {
+        return bankName;
+    }
+
+    public BankNotFoundException(String message, String bankName) {
+        super(message);
+        this.bankName = bankName;
     }
 }
