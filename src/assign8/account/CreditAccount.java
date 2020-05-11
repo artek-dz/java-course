@@ -52,10 +52,10 @@ public class CreditAccount extends Account {
         BigDecimal allowedWithdrawal = allowedAmount(amount);
         BigDecimal newBalance;
         if (amount.compareTo(allowedWithdrawal) < 1) {
-            newBalance = oldBalance.add(amount.negate());
+            newBalance = super.getBalance().add(amount.negate());
             addTransactionLogItem("Amount " + amount + " has been withdrawn",
-                    oldBalance, newBalance);
-            super.setBalance(newBalance);
+                    super.getBalance(), super.getBalance().add(amount.negate()));
+            super.setBalance(super.getBalance().add(amount.negate()));
             return newBalance;
         } else {
             throw new ReachedCreditLimitException("Credit limit reached", allowedWithdrawal);
@@ -65,10 +65,7 @@ public class CreditAccount extends Account {
 
     @Override
     BigDecimal allowedAmount(BigDecimal amount) {
-        BigDecimal balance = super.getBalance();
-        BigDecimal balancePlusCredit = balance.add(creditLimit);
-        BigDecimal allowedAmount = balancePlusCredit.min(amount);
-        return allowedAmount;
+        return super.getBalance().add(creditLimit).min(amount);
     }
 
 

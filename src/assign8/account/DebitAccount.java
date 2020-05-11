@@ -36,8 +36,6 @@ public class DebitAccount extends Account {
     }
 
     BigDecimal allowedAmount(BigDecimal amount) {
-        BigDecimal balance = super.getBalance();
-        BigDecimal allowedAmount = balance.min(amount);
-        return allowedAmount;
+        return super.getBalance().min(amount);
     }
 }

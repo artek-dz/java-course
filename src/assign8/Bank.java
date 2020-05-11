@@ -1,9 +1,6 @@
 package assign8;
 
-import assign8.account.Account;
-import assign8.account.AccountAlreadyExistsException;
-import assign8.account.CreditAccount;
-import assign8.account.DebitAccount;
+import assign8.account.*;
 
 import java.math.*;
 import java.util.*;
@@ -72,16 +69,20 @@ public class Bank {
         }
     }
 
-    public Account getAccountByNumber(int accountNumber) {
+    public Account getAccountByNumber(int accountNumber)  throws AccountNotFoundException {
         for (Account account : accounts) {
             if (account.getAccountNumber() == accountNumber) {
                 return account;
             }
         }
-        return null;
+        throw new AccountNotFoundException("This account has not been found.", accountNumber);
     }
 
     public boolean isAccountOpen(int accountNumber) {
-        return accounts.contains(getAccountByNumber(accountNumber));
+        try {
+            return accounts.contains(getAccountByNumber(accountNumber));
+        } catch (AccountNotFoundException e) {
+            return false;
+        }
     }
 }

@@ -32,12 +32,12 @@ public abstract class Account {
         return balance;
     }
 
-    public BigDecimal getPercentage() {
-        return percentage;
-    }
-
     void setBalance(BigDecimal balance) {
         this.balance = balance;
+    }
+
+    public BigDecimal getPercentage() {
+        return percentage;
     }
 
     @Override
@@ -82,30 +82,24 @@ public abstract class Account {
 
 
     public BigDecimal depositMoney(BigDecimal amount) {
-        BigDecimal oldBalance = this.balance;
-        BigDecimal newBalance = oldBalance.add(amount);
         addTransactionLogItem("Amount " + amount + " has been deposited",
-                oldBalance, newBalance);
-        this.balance = newBalance;
-        return newBalance;
+                this.balance, this.balance.add(amount));
+        this.balance = this.balance.add(amount);
+        return getBalance();
     }
 
     public abstract BigDecimal withdrawMoney(BigDecimal amount) throws ReachedCreditLimitException, NoSufficientFundsException;
 
     public BigDecimal transfer(int toAccountNumber, BigDecimal amount) throws NoSufficientFundsException, AccountNotFoundException {
-        BigDecimal oldBalance = this.balance;
-        BigDecimal allowedWithdrawal = allowedAmount(amount);
-        BigDecimal newBalance;
-        if (amount.compareTo(allowedWithdrawal) < 1) {
-            newBalance = oldBalance.add(amount.negate());
+        if (amount.compareTo(allowedAmount(amount)) < 1) {
             addTransactionLogItem("Amount " + amount + " has been transferred",
-                    oldBalance, newBalance);
-            this.balance = newBalance;
+                    this.balance, this.balance.add(amount.negate()));
+            this.balance = this.balance.add(amount.negate());
             Account toAccount = NationalBank.NATIONAL_BANK.getAccountByNumber(toAccountNumber);
             toAccount.depositMoney(amount);
-            return newBalance;
+            return getBalance();
         } else {
-            throw new NoSufficientFundsException("No sufficient funds available.", allowedWithdrawal);
+            throw new NoSufficientFundsException("No sufficient funds available.", allowedAmount(amount));
         }
     }
 
