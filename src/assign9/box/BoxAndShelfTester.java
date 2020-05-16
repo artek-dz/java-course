@@ -53,6 +53,7 @@ public class BoxAndShelfTester {
 
         System.out.println(shelf3);
 
+        System.out.println(shelf3.getBoxes());
 
     }
 

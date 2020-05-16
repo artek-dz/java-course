@@ -19,4 +19,8 @@ public class Shelf<T> {
     public String toString() {
         return "Shelf"+ boxes;
     }
+
+    public Set<Box<? extends T>> getBoxes() {
+        return boxes;
+    }
 }
