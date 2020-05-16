@@ -66,8 +66,7 @@ public class BoxAndShelfTester {
         for (String bookName : bookNames) {
             books.add(new Book(bookName));
         }
-        Box<Book> boxOfBooks = new Box<>(books);
-        return boxOfBooks;
+        return new Box<>(books);
     }
     private static Box<Toy> makeToys(String name) {
         String[] toyNames = new String[5];
@@ -77,9 +76,7 @@ public class BoxAndShelfTester {
         for (String toyName : toyNames) {
             toys.add(new Toy(toyName));
         }
-
-        Box<Toy> boxOfToys = new Box<>(toys);
-        return boxOfToys;
+        return new Box<>(toys);
     }
 
     private static Box<Food> makeFoods(String name) {
@@ -91,20 +88,18 @@ public class BoxAndShelfTester {
             foods.add(new Food(foodName));
         }
 
-        Box<Food> boxOfFoods = new Box<>(foods);
-        return boxOfFoods;
+        return new Box<>(foods);
     }
 
     private static Box<Fantasy> makeFantasyBooks(String name) {
         String[] fantasyNookNames = new String[5];
-        Arrays.setAll(fantasyNookNames, i -> "fantasy" + i);
+        Arrays.setAll(fantasyNookNames, i -> name + i);
         List<Fantasy> fantasyBooks = new ArrayList<>();
 
         for (String fantasyName : fantasyNookNames) {
             fantasyBooks.add(new Fantasy(fantasyName));
         }
 
-        Box<Fantasy> boxOfFantasyBooks = new Box<>(fantasyBooks);
-        return boxOfFantasyBooks;
+        return new Box<>(fantasyBooks);
     }
 }
