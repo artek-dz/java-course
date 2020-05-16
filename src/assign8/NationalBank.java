@@ -22,23 +22,22 @@ public class NationalBank {
     }
 
 
-    public Bank getBank(String bankName) throws BankNotFoundException {
+    public Optional<Bank> getBank(String bankName) {
         for (Bank bank : banks) {
             if (bank.getName() == bankName) {
-                return bank;
+                return Optional.of(bank);
             }
         }
-        throw new BankNotFoundException("This bank has not been found.", bankName);
+        return Optional.empty();
     }
 
-    public Bank getBank(int accountNumber) {
+    public Optional<Bank> getBank(int accountNumber) {
         for (Bank bank : banks) {
             if (bank.isAccountOpen(accountNumber)) {
-                return bank;
+                return Optional.of(bank);
             }
         }
-
-        return null;
+        return Optional.empty();
     }
 
     public boolean isAccountOpen(int accountNumber) {
@@ -50,12 +49,12 @@ public class NationalBank {
         return false;
     }
 
-    public Account getAccountByNumber(int accountNumber) throws AccountNotFoundException {
+    public Optional<Account> getAccountByNumber(int accountNumber)  {
         for (Bank bank : banks) {
             if (bank.isAccountOpen(accountNumber)) {
                 return bank.getAccountByNumber(accountNumber);
             }
         }
-        throw new AccountNotFoundException("This account has not been found.", accountNumber);
+        return Optional.empty();
     }
 }

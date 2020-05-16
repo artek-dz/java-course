@@ -14,16 +14,17 @@ public class BankApplication {
         init();
 
         NationalBank nb = NationalBank.NATIONAL_BANK;
+
         try {
-            nb.getBank("PKP");
+            nb.getBank("PKP").orElseThrow(()-> new BankNotFoundException("There no such bank","PKP"));
         } catch (BankNotFoundException e) {
             System.out.print(LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS"))
                     + ": " + "Is " + e.getBankName() + " a correct bank name? ");
             System.out.println( e.getMessage());
         }
 
-        Account account1 = nb.getAccountByNumber(12345678);
-        Account account2 = nb.getAccountByNumber(87654321);
+        Account account1 = nb.getAccountByNumber(12345678).get();
+        Account account2 = nb.getAccountByNumber(87654321).get();
         account1.depositMoney(BigDecimal.valueOf(123467));
         try {
             account1.withdrawMoney(BigDecimal.valueOf(467));

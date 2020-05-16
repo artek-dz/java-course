@@ -69,20 +69,17 @@ public class Bank {
         }
     }
 
-    public Account getAccountByNumber(int accountNumber)  throws AccountNotFoundException {
+    public Optional<Account> getAccountByNumber(int accountNumber) {
         for (Account account : accounts) {
             if (account.getAccountNumber() == accountNumber) {
-                return account;
+                return Optional.of(account);
             }
         }
-        throw new AccountNotFoundException("This account has not been found.", accountNumber);
+        return Optional.empty();
+        //throw new AccountNotFoundException("This account has not been found.", accountNumber);
     }
 
     public boolean isAccountOpen(int accountNumber) {
-        try {
-            return accounts.contains(getAccountByNumber(accountNumber));
-        } catch (AccountNotFoundException e) {
-            return false;
-        }
+            return getAccountByNumber(accountNumber).isPresent();
     }
 }

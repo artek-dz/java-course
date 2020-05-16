@@ -95,7 +95,7 @@ public abstract class Account {
             addTransactionLogItem("Amount " + amount + " has been transferred",
                     this.balance, this.balance.add(amount.negate()));
             this.balance = this.balance.add(amount.negate());
-            Account toAccount = NationalBank.NATIONAL_BANK.getAccountByNumber(toAccountNumber);
+            Account toAccount = NationalBank.NATIONAL_BANK.getAccountByNumber(toAccountNumber).orElseThrow();
             toAccount.depositMoney(amount);
             return getBalance();
         } else {
