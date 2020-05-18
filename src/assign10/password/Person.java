@@ -7,19 +7,19 @@ import java.util.Optional;
 public class Person {
         private String firstName;
         private String lastName;
-        private Optional<LocalDate> birthDate;
-
-    public Person(String firstName, String lastName, LocalDate birthDate) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.birthDate = Optional.of(birthDate);
-    }
+        private LocalDate birthDate;
 
     public Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.birthDate = Optional.empty();
     }
+
+    public Person(String firstName, String lastName, LocalDate birthDate) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthDate = birthDate;
+    }
+
 
     public String getFirstName() {
         return firstName;
@@ -29,7 +29,7 @@ public class Person {
         return lastName;
     }
 
-    public Optional<LocalDate> getBirthDate() {
+    public LocalDate getBirthDate() {
         return birthDate;
     }
 

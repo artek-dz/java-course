@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31f6e6cd-7710-46cc-b268-a25976ebcf29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assign7/banking/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign7/banking/Bank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign7/banking/CreditAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign7/banking/DebitAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assign7/banking/NationalBank.java" afterDir="false" />
+    <list default="true" id="31f6e6cd-7710-46cc-b268-a25976ebcf29" name="Default Changelist" comment="assignment 10, implementation of Optional&lt;Bank&gt; and Optional&lt;Account&gt;">
+      <change afterPath="$PROJECT_DIR$/src/lesson7/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign7/onlinestore/OnlineStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign7/onlinestore/OnlineStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign10/password/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign10/password/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign10/password/UserNameGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign10/password/UserNameGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign9/box/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign9/box/Box.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +20,7 @@
         <option value="Interface" />
         <option value="AnnotationType" />
         <option value="package-info" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -69,13 +68,13 @@
       <recent name="assign5" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.OnlineStoreTester">
-    <configuration name="AutoServiceTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign7.autoservice.AutoServiceTester" />
+  <component name="RunManager" selected="Application.UserNameGeneratorTester">
+    <configuration name="BankApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign8.BankApplication" />
       <module name="java-course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assign7.autoservice.*" />
+          <option name="PATTERN" value="assign8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LaptopTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign6.LaptopTester" />
+    <configuration name="BankApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign8.account.BankApplication" />
       <module name="java-course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assign6.*" />
+          <option name="PATTERN" value="assign8.account.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LetterCounter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign7.LetterCounter" />
+    <configuration name="BankApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign8.BankApplication" />
       <module name="java-course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assign7.onlinestore.*" />
+          <option name="PATTERN" value="assign8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MergeSortRandomArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign6.MergeSortRandomArray" />
+    <configuration name="BoxAndShelfTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign9.box.BoxAndShelfTester" />
       <module name="java-course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assign6.*" />
+          <option name="PATTERN" value="assign9.box.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,12 +121,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OnlineStoreTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign7.onlinestore.OnlineStoreTester" />
+    <configuration name="LambdaTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign10.LambdaTester" />
       <module name="java-course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assign7.onlinestore.*" />
+          <option name="PATTERN" value="assign10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign10.streams.StreamTester" />
+      <module name="java-course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign10.streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserNameGeneratorTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign10.password.UserNameGeneratorTester" />
+      <module name="java-course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign10.password.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.OnlineStoreTester" />
-        <item itemvalue="Application.AutoServiceTester" />
-        <item itemvalue="Application.LetterCounter" />
-        <item itemvalue="Application.MergeSortRandomArray" />
-        <item itemvalue="Application.LaptopTester" />
+        <item itemvalue="Application.UserNameGeneratorTester" />
+        <item itemvalue="Application.BankApplication (1)" />
+        <item itemvalue="Application.StreamTester" />
+        <item itemvalue="Application.LambdaTester" />
+        <item itemvalue="Application.BoxAndShelfTester" />
       </list>
     </recent_temporary>
   </component>
@@ -155,146 +180,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584794030290</updated>
-    </task>
-    <task id="LOCAL-00007" summary="BubbleSort of a random array">
-      <created>1585399517466</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1585399517466</updated>
-    </task>
-    <task id="LOCAL-00008" summary="assignment 4, MobilePhone and MobilePhoneTester">
-      <created>1585405841863</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1585405841863</updated>
-    </task>
-    <task id="LOCAL-00009" summary="assignment, optimized BubbleSort">
-      <created>1585413699222</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1585413699222</updated>
-    </task>
-    <task id="LOCAL-00010" summary="assignment, optimized BubbleSort">
-      <created>1585414045664</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1585414045664</updated>
-    </task>
-    <task id="LOCAL-00011" summary="assignment 3, optimized versions of BubbleSortRandomArray">
-      <created>1585415502260</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1585415502260</updated>
-    </task>
-    <task id="LOCAL-00012" summary="assignment 3, Cat and CatTester">
-      <created>1585418553427</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1585418553427</updated>
-    </task>
-    <task id="LOCAL-00013" summary="assignment 3, no break in BubbleSortRandomArray, BubbleSortRandomArray2 and fix to BubbleSortRandomArray3">
-      <created>1585426647135</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1585426647135</updated>
-    </task>
-    <task id="LOCAL-00014" summary="assignment 3, no break in BubbleSortRandomArray, BubbleSortRandomArray2 and fix to BubbleSortRandomArray3">
-      <created>1585431114224</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1585431114224</updated>
-    </task>
-    <task id="LOCAL-00015" summary="assignment 3, Car with Engine">
-      <created>1585473802000</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1585473802000</updated>
-    </task>
-    <task id="LOCAL-00016" summary="assignment 3, Cat class - improved naming convention of instance variables">
-      <created>1585481736430</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1585481736430</updated>
-    </task>
-    <task id="LOCAL-00017" summary="assignment 3, MobilePhone improvements">
-      <created>1585483996556</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1585483996556</updated>
-    </task>
-    <task id="LOCAL-00018" summary="assignment 3, improved Car with Engine">
-      <created>1585492397011</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1585492397011</updated>
-    </task>
-    <task id="LOCAL-00019" summary="assignment 3, Car with Engine">
-      <created>1585493042502</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1585493042502</updated>
-    </task>
-    <task id="LOCAL-00020" summary="assignment 3, improved Car with Engine v2">
-      <created>1585498854837</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1585498854837</updated>
-    </task>
-    <task id="LOCAL-00021" summary="assignment 3, improved Car with Engine v3">
-      <created>1585500655697</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1585500655697</updated>
-    </task>
-    <task id="LOCAL-00022" summary="assignment 5, resursive methods">
-      <created>1585996566107</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1585996566107</updated>
-    </task>
-    <task id="LOCAL-00023" summary="assignment 5, Person and Student">
-      <created>1585997674097</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1585997674097</updated>
-    </task>
-    <task id="LOCAL-00024" summary="assignment 5, Car with Interfaces">
-      <created>1586004599194</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1586004599194</updated>
-    </task>
-    <task id="LOCAL-00025" summary="assignment 5, FactorialCalculator, FibonacciCalculator">
-      <created>1586025720497</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1586025720497</updated>
-    </task>
-    <task id="LOCAL-00026" summary="assignment 5, Inheritance">
-      <created>1586529792596</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1586529792597</updated>
     </task>
     <task id="LOCAL-00027" summary="assignment 5, the longest and the shortest words">
       <created>1586894659678</created>
@@ -499,24 +384,150 @@
       <option name="project" value="LOCAL" />
       <updated>1587842349265</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="assignment 7, OnlineStore v4">
+      <created>1587879147427</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1587879147428</updated>
+    </task>
+    <task id="LOCAL-00057" summary="assignment 7, OnlineStore v5">
+      <created>1587900089257</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1587900089257</updated>
+    </task>
+    <task id="LOCAL-00058" summary="assignment 7, OnlineStore v5">
+      <created>1587900201039</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1587900201039</updated>
+    </task>
+    <task id="LOCAL-00059" summary="assignment 7-8, Account, Bank, NationalBank">
+      <created>1588705088506</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1588705088506</updated>
+    </task>
+    <task id="LOCAL-00060" summary="assignment 7-8, Account, Bank, NationalBank">
+      <created>1588705156226</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1588705156226</updated>
+    </task>
+    <task id="LOCAL-00061" summary="assignment 7-8, Account, Bank, NationalBank">
+      <created>1588775857329</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1588775857332</updated>
+    </task>
+    <task id="LOCAL-00062" summary="assignment 7-8, Account, Bank, NationalBank">
+      <created>1588784698427</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1588784698427</updated>
+    </task>
+    <task id="LOCAL-00063" summary="assignment 7-8, Account, Bank, NationalBank, BankApplication">
+      <created>1588789961653</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1588789961654</updated>
+    </task>
+    <task id="LOCAL-00064" summary="assignment 7-8, Account, Bank, NationalBank, BankApplication v2">
+      <created>1589104070316</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1589104070319</updated>
+    </task>
+    <task id="LOCAL-00065" summary="assignment 9, DayOfWeek v1">
+      <created>1589108225352</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1589108225352</updated>
+    </task>
+    <task id="LOCAL-00066" summary="assignment 9, BankApplication v3">
+      <created>1589217324730</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1589217324731</updated>
+    </task>
+    <task id="LOCAL-00067" summary="assignment 9, Boxes and Shelves">
+      <created>1589484469786</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1589484469787</updated>
+    </task>
+    <task id="LOCAL-00068" summary="assignment 9, Boxes and Shelves v2">
+      <created>1589607615682</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1589607615682</updated>
+    </task>
+    <task id="LOCAL-00069" summary="assignment 9, Boxes and Shelves v2">
+      <created>1589607907191</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1589607907191</updated>
+    </task>
+    <task id="LOCAL-00070" summary="assignment 10, LambdaTester">
+      <created>1589629902466</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1589629902467</updated>
+    </task>
+    <task id="LOCAL-00071" summary="assignment 10, Streams and Lambdas">
+      <created>1589648562786</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1589648562786</updated>
+    </task>
+    <task id="LOCAL-00072" summary="assignment 10, UserNameGenerator">
+      <created>1589650409697</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1589650409697</updated>
+    </task>
+    <task id="LOCAL-00073" summary="assignment 10, implementation of Optional&lt;Bank&gt; and Optional&lt;Account&gt;">
+      <created>1589652348291</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1589652348291</updated>
+    </task>
+    <task id="LOCAL-00074" summary="assignment 10, improvements to filters in StreamTester">
+      <created>1589817430681</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1589817430682</updated>
+    </task>
+    <task id="LOCAL-00075" summary="assignment 10, improvements to filters in StreamTester">
+      <created>1589817543243</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1589817543243</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="assignment 3, improved Car with Engine" />
-    <MESSAGE value="assignment 3, Car with Engine" />
-    <MESSAGE value="assignment 3, improved Car with Engine v2" />
-    <MESSAGE value="assignment 3, improved Car with Engine v3" />
-    <MESSAGE value="assignment 5, resursive methods" />
-    <MESSAGE value="assignment 5, Person and Student" />
-    <MESSAGE value="assignment 5, Car with Interfaces" />
-    <MESSAGE value="assignment 5, FactorialCalculator, FibonacciCalculator" />
-    <MESSAGE value="assignment 5, Inheritance" />
-    <MESSAGE value="assignment 5, the longest and the shortest words" />
-    <MESSAGE value="assignment 5, Inheritance and Polymorphism" />
-    <MESSAGE value="assignment 6, UniqueLetterFinder using set and list" />
-    <MESSAGE value="assignment 6, UniqueLetterFinder using LinkedList" />
-    <MESSAGE value="assignment 6, Beer, Laptop" />
     <MESSAGE value="assignment 6, ArrayList vs LinkedList, UniqueLetters" />
     <MESSAGE value="assignment 6, Selection Sort" />
     <MESSAGE value="assignment 6, Selection Sort for Lists" />
@@ -528,53 +539,75 @@
     <MESSAGE value="assignment 7, AutoService" />
     <MESSAGE value="assignment 7, OnlineStore v2" />
     <MESSAGE value="assignment 7, OnlineStore v3" />
-    <option name="LAST_COMMIT_MESSAGE" value="assignment 7, OnlineStore v3" />
+    <MESSAGE value="assignment 7, OnlineStore v4" />
+    <MESSAGE value="assignment 7, OnlineStore v5" />
+    <MESSAGE value="assignment 7-8, Account, Bank, NationalBank" />
+    <MESSAGE value="assignment 7-8, Account, Bank, NationalBank, BankApplication" />
+    <MESSAGE value="assignment 7-8, Account, Bank, NationalBank, BankApplication v2" />
+    <MESSAGE value="assignment 9, DayOfWeek v1" />
+    <MESSAGE value="assignment 9, BankApplication v3" />
+    <MESSAGE value="assignment 9, Boxes and Shelves" />
+    <MESSAGE value="assignment 9, Boxes and Shelves v2" />
+    <MESSAGE value="assignment 10, LambdaTester" />
+    <MESSAGE value="assignment 10, Streams and Lambdas" />
+    <MESSAGE value="assignment 10, UserNameGenerator" />
+    <MESSAGE value="assignment 10, implementation of Optional&lt;Bank&gt; and Optional&lt;Account&gt;" />
+    <MESSAGE value="assignment 10, improvements to filters in StreamTester" />
+    <option name="LAST_COMMIT_MESSAGE" value="assignment 10, improvements to filters in StreamTester" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="0" width="1012" height="872" key="#Intentions" timestamp="1586001683028">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="0" y="0" width="1012" height="872" key="#Intentions/0.0.1368.872@0.0.1368.872" timestamp="1586001683028" />
-    <state x="790" y="115" key="#com.intellij.ide.util.MemberChooser" timestamp="1587842231013">
+    <state x="682" y="107" key="#com.intellij.ide.util.MemberChooser" timestamp="1589651135750">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="790" y="115" key="#com.intellij.ide.util.MemberChooser/0.0.1368.872@0.0.1368.872" timestamp="1587842231013" />
-    <state x="454" y="311" width="459" height="257" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1587835652236">
+    <state x="682" y="107" key="#com.intellij.ide.util.MemberChooser/0.0.1368.872@0.0.1368.872" timestamp="1589651135750" />
+    <state x="454" y="311" width="459" height="257" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589750798086">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="454" y="311" width="459" height="257" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1368.872@0.0.1368.872" timestamp="1587835652236" />
-    <state x="41" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585469717250">
+    <state x="454" y="311" width="459" height="257" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1368.872@0.0.1368.872" timestamp="1589750798086" />
+    <state x="41" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589631764625">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="41" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1368.872@0.0.1368.872" timestamp="1585469717250" />
+    <state x="41" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1368.872@0.0.1368.872" timestamp="1589631764625" />
+    <state x="353" y="128" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1589481525242">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="353" y="128" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1368.872@0.0.1368.872" timestamp="1589481525242" />
+    <state x="290" y="36" key="#com.intellij.unscramble.UnscrambleDialog" timestamp="1589215238302">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="290" y="36" key="#com.intellij.unscramble.UnscrambleDialog/0.0.1368.872@0.0.1368.872" timestamp="1589215238302" />
     <state x="388" y="276" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586529491922">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="388" y="276" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1368.872@0.0.1368.872" timestamp="1586529491922" />
-    <state x="278" y="0" key="CommitChangelistDialog2" timestamp="1587842348099">
+    <state x="285" y="0" key="CommitChangelistDialog2" timestamp="1589819915258">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="278" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1587842348099" />
+    <state x="285" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1589819915258" />
     <state x="416" y="140" key="FileChooserDialogImpl" timestamp="1587211838027">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="416" y="140" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1587211838027" />
-    <state width="1314" height="214" key="GridCell.Tab.0.bottom" timestamp="1587842883040">
+    <state width="1314" height="254" key="GridCell.Tab.0.bottom" timestamp="1589817799918">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="214" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1587842883040" />
-    <state width="1314" height="214" key="GridCell.Tab.0.center" timestamp="1587842883040">
+    <state width="1314" height="254" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1589817799918" />
+    <state width="1314" height="254" key="GridCell.Tab.0.center" timestamp="1589817799918">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="214" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1587842883040" />
-    <state width="1314" height="214" key="GridCell.Tab.0.left" timestamp="1587842883039">
+    <state width="1314" height="254" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1589817799918" />
+    <state width="1314" height="254" key="GridCell.Tab.0.left" timestamp="1589817799917">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="214" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1587842883039" />
-    <state width="1314" height="214" key="GridCell.Tab.0.right" timestamp="1587842883040">
+    <state width="1314" height="254" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1589817799917" />
+    <state width="1314" height="254" key="GridCell.Tab.0.right" timestamp="1589817799918">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="214" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1587842883040" />
+    <state width="1314" height="254" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1589817799918" />
     <state width="1314" height="266" key="GridCell.Tab.1.bottom" timestamp="1587313916187">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -595,22 +628,22 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="289" y="73" key="NewModule_or_Project.wizard/0.0.1368.872@0.0.1368.872" timestamp="1587211958026" />
-    <state x="593" y="102" key="RollbackChangesDialog" timestamp="1587834661348">
+    <state x="593" y="102" key="RollbackChangesDialog" timestamp="1589650693042">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="593" y="102" key="RollbackChangesDialog/0.0.1368.872@0.0.1368.872" timestamp="1587834661348" />
+    <state x="593" y="102" key="RollbackChangesDialog/0.0.1368.872@0.0.1368.872" timestamp="1589650693042" />
     <state x="37" y="0" key="SettingsEditor" timestamp="1584890589187">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="37" y="0" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1584890589187" />
-    <state x="177" y="108" key="Vcs.Push.Dialog.v2" timestamp="1587842356064">
+    <state x="81" y="6" key="Vcs.Push.Dialog.v2" timestamp="1589819917952">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="177" y="108" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1587842356064" />
-    <state x="400" y="218" key="com.intellij.ide.util.TipDialog" timestamp="1587878789900">
+    <state x="81" y="6" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1589819917952" />
+    <state x="400" y="218" key="com.intellij.ide.util.TipDialog" timestamp="1589817128059">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="400" y="218" key="com.intellij.ide.util.TipDialog/0.0.1368.872@0.0.1368.872" timestamp="1587878789900" />
+    <state x="400" y="218" key="com.intellij.ide.util.TipDialog/0.0.1368.872@0.0.1368.872" timestamp="1589817128059" />
     <state x="208" y="332" key="com.intellij.ide.util.TipDialog/0.0.912.1328@0.0.912.1328" timestamp="1586805694224" />
     <state x="464" y="338" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587879104074">
       <screen x="0" y="0" width="1368" height="872" />
@@ -620,6 +653,10 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="86" y="103" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1368.872@0.0.1368.872" timestamp="1586001696066" />
+    <state x="353" y="164" width="661" height="556" key="extract.method.dialog" timestamp="1588699581076">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="353" y="164" width="661" height="556" key="extract.method.dialog/0.0.1368.872@0.0.1368.872" timestamp="1588699581076" />
     <state x="0" y="0" key="new project wizard" timestamp="1584888724343">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -632,10 +669,10 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="259" y="196" key="run.anything.popup/0.0.1368.872@0.0.1368.872" timestamp="1586970240438" />
-    <state x="266" y="2" width="840" height="870" key="search.everywhere.popup" timestamp="1587820053060">
+    <state x="270" y="6" width="840" height="870" key="search.everywhere.popup" timestamp="1589649203216">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="266" y="2" width="840" height="870" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1587820053060" />
+    <state x="270" y="6" width="840" height="870" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1589649203216" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java_course$MergeSortRandomArray.ic" NAME="MergeSortRandomArray Coverage Results" MODIFIED="1587293319367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
