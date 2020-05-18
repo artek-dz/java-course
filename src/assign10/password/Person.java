@@ -2,7 +2,6 @@ package assign10.password;
 
 import java.time.LocalDate;
 import java.util.Objects;
-import java.util.Optional;
 
 public class Person {
         private String firstName;
