@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31f6e6cd-7710-46cc-b268-a25976ebcf29" name="Default Changelist" comment="assignment 10, implementation of Optional&lt;Bank&gt; and Optional&lt;Account&gt;">
-      <change afterPath="$PROJECT_DIR$/src/lesson7/Main.java" afterDir="false" />
+    <list default="true" id="31f6e6cd-7710-46cc-b268-a25976ebcf29" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign10/password/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign10/password/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign10/password/UserNameGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign10/password/UserNameGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign9/box/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign9/box/Box.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign9/box/BoxAndShelfTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign9/box/BoxAndShelfTester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +16,9 @@
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="AnnotationType" />
-        <option value="package-info" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -68,7 +65,7 @@
       <recent name="assign5" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UserNameGeneratorTester">
+  <component name="RunManager" selected="Application.BoxAndShelfTester">
     <configuration name="BankApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="assign8.BankApplication" />
       <module name="java-course" />
@@ -162,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BoxAndShelfTester" />
         <item itemvalue="Application.UserNameGeneratorTester" />
         <item itemvalue="Application.BankApplication (1)" />
         <item itemvalue="Application.StreamTester" />
         <item itemvalue="Application.LambdaTester" />
-        <item itemvalue="Application.BoxAndShelfTester" />
       </list>
     </recent_temporary>
   </component>
@@ -180,41 +177,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584794030290</updated>
-    </task>
-    <task id="LOCAL-00027" summary="assignment 5, the longest and the shortest words">
-      <created>1586894659678</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1586894659678</updated>
-    </task>
-    <task id="LOCAL-00028" summary="assignment 5, the longest and the shortest words">
-      <created>1586894747022</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1586894747022</updated>
-    </task>
-    <task id="LOCAL-00029" summary="assignment 5, Inheritance and Polymorphism">
-      <created>1586973400824</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1586973400824</updated>
-    </task>
-    <task id="LOCAL-00030" summary="assignment 6, UniqueLetterFinder using set and list">
-      <created>1587207583663</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1587207583663</updated>
-    </task>
-    <task id="LOCAL-00031" summary="assignment 6, UniqueLetterFinder using LinkedList">
-      <created>1587207687288</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1587207687288</updated>
     </task>
     <task id="LOCAL-00032" summary="assignment 6, Beer, Laptop">
       <created>1587220635695</created>
@@ -524,13 +486,45 @@
       <option name="project" value="LOCAL" />
       <updated>1589817543243</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="assignment 10, UserNameGenerator v2">
+      <created>1589819916190</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1589819916191</updated>
+    </task>
+    <task id="LOCAL-00077" summary="assignment 10, implementation of Optional&lt;Bank&gt; and Optional&lt;Account&gt;">
+      <created>1589819952209</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1589819952209</updated>
+    </task>
+    <task id="LOCAL-00078" summary="assignment 10, UserNamePassword v2">
+      <created>1589819990798</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1589819990798</updated>
+    </task>
+    <task id="LOCAL-00079" summary="assignment 10, UserNamePassword v2">
+      <created>1589820023555</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1589820023555</updated>
+    </task>
+    <task id="LOCAL-00080" summary="assignment 9, helper method with lambda">
+      <created>1589824494020</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1589824494021</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="assignment 6, ArrayList vs LinkedList, UniqueLetters" />
-    <MESSAGE value="assignment 6, Selection Sort" />
-    <MESSAGE value="assignment 6, Selection Sort for Lists" />
     <MESSAGE value="assignment 6, Merge Sort" />
     <MESSAGE value="assignment 6, Laptop deep cloning v2" />
     <MESSAGE value="assignment 6, MergeSort improvements" />
@@ -551,9 +545,12 @@
     <MESSAGE value="assignment 10, LambdaTester" />
     <MESSAGE value="assignment 10, Streams and Lambdas" />
     <MESSAGE value="assignment 10, UserNameGenerator" />
-    <MESSAGE value="assignment 10, implementation of Optional&lt;Bank&gt; and Optional&lt;Account&gt;" />
     <MESSAGE value="assignment 10, improvements to filters in StreamTester" />
-    <option name="LAST_COMMIT_MESSAGE" value="assignment 10, improvements to filters in StreamTester" />
+    <MESSAGE value="assignment 10, UserNameGenerator v2" />
+    <MESSAGE value="assignment 10, implementation of Optional&lt;Bank&gt; and Optional&lt;Account&gt;" />
+    <MESSAGE value="assignment 10, UserNamePassword v2" />
+    <MESSAGE value="assignment 9, helper method with lambda" />
+    <option name="LAST_COMMIT_MESSAGE" value="assignment 9, helper method with lambda" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="0" width="1012" height="872" key="#Intentions" timestamp="1586001683028">
@@ -572,10 +569,10 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="41" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1368.872@0.0.1368.872" timestamp="1589631764625" />
-    <state x="353" y="128" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1589481525242">
+    <state x="353" y="128" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1589824321331">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="353" y="128" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1368.872@0.0.1368.872" timestamp="1589481525242" />
+    <state x="353" y="128" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1368.872@0.0.1368.872" timestamp="1589824321331" />
     <state x="290" y="36" key="#com.intellij.unscramble.UnscrambleDialog" timestamp="1589215238302">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -584,30 +581,30 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="388" y="276" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1368.872@0.0.1368.872" timestamp="1586529491922" />
-    <state x="285" y="0" key="CommitChangelistDialog2" timestamp="1589819951122">
+    <state x="285" y="0" key="CommitChangelistDialog2" timestamp="1589824493260">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="285" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1589819951122" />
+    <state x="285" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1589824493260" />
     <state x="416" y="140" key="FileChooserDialogImpl" timestamp="1587211838027">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="416" y="140" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1587211838027" />
-    <state width="1314" height="254" key="GridCell.Tab.0.bottom" timestamp="1589817799918">
+    <state width="1314" height="223" key="GridCell.Tab.0.bottom" timestamp="1589828633755">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="254" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1589817799918" />
-    <state width="1314" height="254" key="GridCell.Tab.0.center" timestamp="1589817799918">
+    <state width="1314" height="223" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1589828633755" />
+    <state width="1314" height="223" key="GridCell.Tab.0.center" timestamp="1589828633755">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="254" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1589817799918" />
-    <state width="1314" height="254" key="GridCell.Tab.0.left" timestamp="1589817799917">
+    <state width="1314" height="223" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1589828633755" />
+    <state width="1314" height="223" key="GridCell.Tab.0.left" timestamp="1589828633755">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="254" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1589817799917" />
-    <state width="1314" height="254" key="GridCell.Tab.0.right" timestamp="1589817799918">
+    <state width="1314" height="223" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1589828633755" />
+    <state width="1314" height="223" key="GridCell.Tab.0.right" timestamp="1589828633755">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="254" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1589817799918" />
+    <state width="1314" height="223" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1589828633755" />
     <state width="1314" height="266" key="GridCell.Tab.1.bottom" timestamp="1587313916187">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -636,15 +633,15 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="37" y="0" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1584890589187" />
-    <state x="81" y="6" key="Vcs.Push.Dialog.v2" timestamp="1589819954875">
+    <state x="81" y="6" key="Vcs.Push.Dialog.v2" timestamp="1589828737094">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="81" y="6" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1589819954875" />
-    <state x="400" y="218" key="com.intellij.ide.util.TipDialog" timestamp="1589817128059">
+    <state x="81" y="6" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1589828737094" />
+    <state x="400" y="218" key="com.intellij.ide.util.TipDialog" timestamp="1589827919090">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="400" y="218" key="com.intellij.ide.util.TipDialog/0.0.1368.872@0.0.1368.872" timestamp="1589817128059" />
-    <state x="208" y="332" key="com.intellij.ide.util.TipDialog/0.0.912.1328@0.0.912.1328" timestamp="1586805694224" />
+    <state x="400" y="218" key="com.intellij.ide.util.TipDialog/0.0.1368.872@0.0.1368.872" timestamp="1589827919090" />
+    <state x="208" y="332" key="com.intellij.ide.util.TipDialog/0.0.912.1328@0.0.912.1328" timestamp="1589827792091" />
     <state x="464" y="338" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587879104074">
       <screen x="0" y="0" width="1368" height="872" />
     </state>

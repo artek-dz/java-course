@@ -4,34 +4,29 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
-import java.util.function.Supplier;
 
 public class BoxAndShelfTester {
 
     public static void main(String[] args) {
 
-        Box<Book> boxOfBooks = (Box<Book>) makeItems("book",Book::new);
+        Box<Book> boxOfBooks = makeBooks("book");
         System.out.println(boxOfBooks.toString());
 
-        Box<Toy> boxOfToys = new Box<>();
-        boxOfToys = makeToys("toy");
+        Box<Toy> boxOfToys = makeToys("toy");
         System.out.println(boxOfToys.toString());
 
-        Box<Food> boxOfFoods = new Box<>();
-        boxOfFoods = makeFoods("food");
+        Box<Food> boxOfFoods = makeFoods("food");
         System.out.println(boxOfFoods.toString());
 
-        Box<Item>  boxOfItems = new Box<>();
+        Box<Item> boxOfItems = new Box<>();
         boxOfItems.addAll(boxOfBooks.getItems());
         boxOfItems.addAll(boxOfFoods.getItems());
         boxOfItems.addAll(boxOfToys.getItems());
 
         System.out.println(boxOfItems.toString());
 
-        Box<Fantasy> boxOfFantasyBooks = new Box<>();
-        boxOfFantasyBooks = makeFantasyBooks("food");
+        Box<Fantasy> boxOfFantasyBooks = makeFantasyBooks("food");
         System.out.println(boxOfFantasyBooks.toString());
-
 
         Shelf<Toy> shelf1 = new Shelf<>();
         shelf1.add(boxOfToys);
@@ -53,65 +48,34 @@ public class BoxAndShelfTester {
         shelf3.add(boxOfStrings);
 
         System.out.println(shelf3);
-
         System.out.println(shelf3.getBoxes());
 
     }
 
 
     private static Box<Book> makeBooks(String name) {
-        String[] bookNames = new String[5];
-        Arrays.setAll(bookNames, i -> name + i);
-        List<Book> books = new ArrayList<>();
-
-        for (String bookName : bookNames) {
-            books.add(new Book(bookName));
-        }
-        return new Box<>(books);
+        return makeItems("name", Book::new);
     }
-    private static Box<Toy> makeToys(String name) {
-        String[] toyNames = new String[5];
-        Arrays.setAll(toyNames, i -> name + i);
-        List<Toy> toys = new ArrayList<>();
 
-        for (String toyName : toyNames) {
-            toys.add(new Toy(toyName));
-        }
-        return new Box<>(toys);
+    private static Box<Toy> makeToys(String name) {
+        return makeItems("name", Toy::new);
     }
 
     private static Box<Food> makeFoods(String name) {
-        String[] foodNames = new String[5];
-        Arrays.setAll(foodNames, i -> name + i);
-        List<Food> foods = new ArrayList<>();
-
-        for (String foodName : foodNames) {
-            foods.add(new Food(foodName));
-        }
-
-        return new Box<>(foods);
+        return makeItems("name", Food::new);
     }
 
     private static Box<Fantasy> makeFantasyBooks(String name) {
-        String[] fantasyNookNames = new String[5];
-        Arrays.setAll(fantasyNookNames, i -> name + i);
-        List<Fantasy> fantasyBooks = new ArrayList<>();
-
-        for (String fantasyName : fantasyNookNames) {
-            fantasyBooks.add(new Fantasy(fantasyName));
-        }
-
-        return new Box<>(fantasyBooks);
+        return makeItems("name", Fantasy::new);
     }
 
-    private static Box<? extends Item> makeItems(String name, Function<String,? extends Item> constructor) {
-        String[] itemNames = new String[4];
+    private static <T> Box<T> makeItems(String name, Function<String, T> constructor) {
+        String[] itemNames = new String[5];
         Arrays.setAll(itemNames, i -> name + i);
-        List<Item> items = new ArrayList<>();
+        List<T> items = new ArrayList<>();
         for (String itemName : itemNames) {
             items.add(constructor.apply(itemName));
         }
         return new Box<>(items);
     }
-
 }
