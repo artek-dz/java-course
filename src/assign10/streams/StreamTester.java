@@ -143,7 +143,7 @@ public class StreamTester {
         System.out.println(sum0);
 
         Integer sum1 = List.copyOf(persons).stream()
-                .mapToInt(p -> p.getSalary())
+                .mapToInt(Person::getSalary)
                 .sum();
         System.out.println(sum1);
 
