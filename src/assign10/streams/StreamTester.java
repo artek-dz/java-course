@@ -69,19 +69,22 @@ public class StreamTester {
 //        hint: use stream, filter, predicate, sort, collect, collector
 
         List<Person> menUnder65 = List.copyOf(persons).stream()
-                .filter(p -> p.getGender().equals(Gender.MASCULINE) && p.getBirthDate().isAfter(LocalDate.now().minusYears(65)))
+                .filter(p -> p.getGender().equals(Gender.MASCULINE))
+                .filter(p -> p.getBirthDate().isAfter(LocalDate.now().minusYears(65)))
                 .sorted((p0, p1) -> p0.getLastName().compareTo(person1.getLastName()))
                 .collect(Collectors.toList());
         System.out.println(menUnder65);
 
         List<Person> women5000 = List.copyOf(persons).stream()
-                .filter(p -> p.getGender().equals(Gender.FEMININE) && (p.getSalary() < 5000))
+                .filter(p -> p.getGender().equals(Gender.FEMININE))
+                .filter(p -> p.getSalary() < 5000)
                 .sorted((p0, p1) -> Collator.getInstance().compare(p0.getFirstName(), p1.getFirstName()))
                 .collect(Collectors.toList());
         System.out.println(women5000);
 
         List<Person> youngFromKrakow = List.copyOf(persons).stream()
-                .filter(p -> p.getAddress().getCity().equals("Krakow") && p.getBirthDate().isAfter(LocalDate.now().minusYears(18)))
+                .filter(p -> p.getAddress().getCity().equals("Krakow"))
+                .filter(p -> p.getBirthDate().isAfter(LocalDate.now().minusYears(18)))
                 .sorted(Comparator.comparing(Person::getFirstName))
                 .collect(Collectors.toList());
         System.out.println(youngFromKrakow);
@@ -112,13 +115,15 @@ public class StreamTester {
         System.out.println(average1);
 
         long womenInKrakowCount = List.copyOf(persons).stream()
-                .filter(p -> (p.getAddress().getCity().equals("Krakow")) && p.getGender().equals(Gender.FEMININE))
+                .filter(p -> p.getAddress().getCity().equals("Krakow"))
+                .filter(p -> p.getGender().equals(Gender.FEMININE))
                 .count();
 
         System.out.println(womenInKrakowCount);
 
         long menAfter65 = List.copyOf(persons).stream()
-                .filter(p -> (p.getBirthDate().isBefore(LocalDate.now().minusYears(65))) && p.getGender().equals(Gender.MASCULINE))
+                .filter(p -> p.getBirthDate().isBefore(LocalDate.now().minusYears(65)))
+                .filter(p -> p.getGender().equals(Gender.MASCULINE))
                 .count();
 
         System.out.println(menAfter65);
@@ -151,11 +156,13 @@ public class StreamTester {
 //        - does all persons contains letter 'a' in lastName
 //        hint: use anyMatch, allMatch
 
-        Boolean containsA = women5000.stream().anyMatch(p->p.getFirstName().substring(0,1).equals("A"));
+        Boolean containsA = women5000.stream()
+                .anyMatch(p -> p.getFirstName().substring(0, 1).equals("A"));
         System.out.println(containsA);
 
 
-        Boolean allWithA = youngFromKrakow.stream().allMatch(p->p.getLastName().contains("a"));
+        Boolean allWithA = youngFromKrakow.stream()
+                .allMatch(p -> p.getLastName().contains("a"));
         System.out.println(allWithA);
     }
 }
