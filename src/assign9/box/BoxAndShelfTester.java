@@ -3,13 +3,14 @@ package assign9.box;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Function;
+import java.util.function.Supplier;
 
 public class BoxAndShelfTester {
 
     public static void main(String[] args) {
 
-        Box<Book> boxOfBooks = new Box<>();
-        boxOfBooks = makeBooks("book");
+        Box<Book> boxOfBooks = (Box<Book>) makeItems("book",Book::new);
         System.out.println(boxOfBooks.toString());
 
         Box<Toy> boxOfToys = new Box<>();
@@ -102,4 +103,15 @@ public class BoxAndShelfTester {
 
         return new Box<>(fantasyBooks);
     }
+
+    private static Box<? extends Item> makeItems(String name, Function<String,? extends Item> constructor) {
+        String[] itemNames = new String[4];
+        Arrays.setAll(itemNames, i -> name + i);
+        List<Item> items = new ArrayList<>();
+        for (String itemName : itemNames) {
+            items.add(constructor.apply(itemName));
+        }
+        return new Box<>(items);
+    }
+
 }
