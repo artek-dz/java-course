@@ -69,7 +69,7 @@ public class BoxAndShelfTester {
         return makeItems("name", Fantasy::new);
     }
 
-    private static <T> Box<T> makeItems(String name, Function<String, T> constructor) {
+    private static <T extends Item> Box<T> makeItems(String name, Function<String, T> constructor) {
         String[] itemNames = new String[5];
         Arrays.setAll(itemNames, i -> name + i);
         List<T> items = new ArrayList<>();
