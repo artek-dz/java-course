@@ -1,9 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31f6e6cd-7710-46cc-b268-a25976ebcf29" name="Default Changelist" comment="">
+    <list default="true" id="31f6e6cd-7710-46cc-b268-a25976ebcf29" name="Default Changelist" comment="assignment 11, Builder Pattern with FeatureStructure">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_0_M1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0_M1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_0_M1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_0_M1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0_M1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_0_M1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mutabilitydetector_MutabilityDetector_0_10_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/assign8/account/BankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assign9/box/BoxAndShelfTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/assign9/box/BoxAndShelfTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-course.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java-course.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign1/GreetUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign1/GreetUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign1/Operations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign1/Operations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign1/PrintTextFiveTimes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign1/PrintTextFiveTimes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign1/PrintTextFiveTimesWithLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign1/PrintTextFiveTimesWithLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign1/Quiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign1/Quiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign1/SimpleAlgebra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign1/SimpleAlgebra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign1/SumTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign1/SumTwoNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign10/LambdaTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign10/LambdaTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign10/password/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign10/password/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign10/password/UserNameGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign10/password/UserNameGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign10/password/UserNameGeneratorTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign10/password/UserNameGeneratorTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign10/streams/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign10/streams/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign10/streams/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign10/streams/Gender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign10/streams/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign10/streams/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign10/streams/StreamTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign10/streams/StreamTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign2/ArgumentPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign2/ArgumentPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign2/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign2/Counter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign2/CounterDown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign2/CounterDown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign2/DaysOfWeek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign2/DaysOfWeek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign2/InputCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign2/InputCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign2/PasswordVerification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign2/PasswordVerification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign2/SimpleSwap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign2/SimpleSwap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign2/Swap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign2/Swap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign2/TrafficLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign2/TrafficLight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign2/TriangleChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign2/TriangleChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign2/WeatherForecast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign2/WeatherForecast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign2/WeatherForecastWithLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign2/WeatherForecastWithLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign3/ArgumentPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign3/ArgumentPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign3/AverageCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign3/AverageCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign3/DiscountCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign3/DiscountCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign3/FindMinElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign3/FindMinElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign3/LetterPrinter1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign3/LetterPrinter1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign3/LetterPrinter2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign3/LetterPrinter2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign3/PrintPrimeNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign3/PrintPrimeNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign3/RandomArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign3/RandomArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign3/RandomArrayWithoutLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign3/RandomArrayWithoutLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign3/SumCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign3/SumCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign4/BubbleSortRandomArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign4/BubbleSortRandomArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign4/BubbleSortRandomArray2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign4/BubbleSortRandomArray2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign4/BubbleSortRandomArray3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign4/BubbleSortRandomArray3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign4/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign4/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign4/CarTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign4/CarTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign4/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign4/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign4/CatTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign4/CatTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign4/CheckPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign4/CheckPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign4/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign4/Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign4/MobilePhone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign4/MobilePhone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign4/MobilePhoneTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign4/MobilePhoneTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign4/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign4/Palindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/CarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/CarTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/Chargeable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/Chargeable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/ElectricCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/ElectricCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/Factorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/Factorial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/FactorialCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/FactorialCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/Fibonacci.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/FibonacciCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/FibonacciCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/FuelCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/FuelCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/HybridCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/HybridCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/LongestShortestWordsFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/LongestShortestWordsFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/Tankable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/Tankable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/transport/Airplane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/transport/Airplane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/transport/Bicycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/transport/Bicycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/transport/Bus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/transport/Bus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/transport/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/transport/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/transport/Motorbike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/transport/Motorbike.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/transport/PublicTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/transport/PublicTransport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/transport/Scooter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/transport/Scooter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/transport/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/transport/Train.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/transport/Tram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/transport/Tram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/transport/Transport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/transport/Transport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/transport/TransportTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/transport/TransportTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign5/transport/TwoWheeler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign5/transport/TwoWheeler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign6/Beer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign6/Beer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign6/BeerTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign6/BeerTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign6/HardDrive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign6/HardDrive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign6/Laptop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign6/Laptop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign6/LaptopTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign6/LaptopTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign6/ListComparison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign6/ListComparison.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign6/MergeSortRandomArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign6/MergeSortRandomArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign6/Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign6/Processor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign6/SelectionSortRandomArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign6/SelectionSortRandomArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign6/UniqueListOfLettersFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign6/UniqueListOfLettersFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign6/UniqueSetOfLettersFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign6/UniqueSetOfLettersFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign7/LetterCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign7/LetterCounter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign7/autoservice/AutoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign7/autoservice/AutoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign7/autoservice/AutoServiceTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign7/autoservice/AutoServiceTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign7/autoservice/Part.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign7/autoservice/Part.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign7/onlinestore/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign7/onlinestore/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign7/onlinestore/ItemByName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign7/onlinestore/ItemByName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign7/onlinestore/ItemByPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign7/onlinestore/ItemByPrice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign7/onlinestore/OnlineStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign7/onlinestore/OnlineStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign7/onlinestore/OnlineStoreTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign7/onlinestore/OnlineStoreTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign8/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign8/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign8/BankApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign8/BankApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign8/BankNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign8/BankNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign8/NationalBank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign8/NationalBank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign8/account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign8/account/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign8/account/AccountAlreadyExistsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign8/account/AccountAlreadyExistsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign8/account/AccountNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign8/account/AccountNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign8/account/CreditAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign8/account/CreditAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign8/account/DebitAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign8/account/DebitAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign8/account/NoSufficientFundsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign8/account/NoSufficientFundsException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign8/account/ReachedCreditLimitException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign8/account/ReachedCreditLimitException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign8/account/TransactionLogItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign8/account/TransactionLogItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign9/DayOfWeek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign9/DayOfWeek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign9/DayOfWeekDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign9/DayOfWeekDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign9/box/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign9/box/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign9/box/Box.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign9/box/Box.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign9/box/BoxAndShelfTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign9/box/BoxAndShelfTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign9/box/Fantasy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign9/box/Fantasy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign9/box/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign9/box/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign9/box/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign9/box/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign9/box/Shelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign9/box/Shelf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assign9/box/Toy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign9/box/Toy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson1/HelloWorldApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson1/HelloWorldApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson1/HelloWorldApplication2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson1/HelloWorldApplication2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson1/NewHelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson1/NewHelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson1/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson1/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson2/ArraysDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson2/ArraysDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson2/ConditionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson2/ConditionChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson2/GreetingApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson2/GreetingApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson2/HelloIdea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson2/HelloIdea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson2/LoopDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson2/LoopDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson3/FindMaxElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson3/FindMaxElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson7/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson7/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +162,8 @@
         <option value="Interface" />
         <option value="AnnotationType" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="package-info" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -41,19 +186,26 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="LombokPluginEnabledInProject" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="assign5" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\artek\IdeaProjects\java-course\src" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -65,52 +217,13 @@
       <recent name="assign5" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BoxAndShelfTester">
-    <configuration name="BankApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign8.BankApplication" />
+  <component name="RunManager" selected="Java Scratch.Scratch">
+    <configuration name="CarTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign12.CarTest" />
       <module name="java-course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assign8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BankApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign8.account.BankApplication" />
-      <module name="java-course" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign8.account.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BankApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign8.BankApplication" />
-      <module name="java-course" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign8.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BoxAndShelfTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign9.box.BoxAndShelfTester" />
-      <module name="java-course" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assign9.box.*" />
+          <option name="PATTERN" value="assign12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,12 +244,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign10.streams.StreamTester" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="assign11.Test" />
       <module name="java-course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assign10.streams.*" />
+          <option name="PATTERN" value="assign11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,25 +257,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserNameGeneratorTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="assign10.password.UserNameGeneratorTester" />
+    <configuration name="CarTest.testImmutable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assign10.password.*" />
+          <option name="PATTERN" value="assign12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="assign12" />
+      <option name="MAIN_CLASS_NAME" value="assign12.CarTest" />
+      <option name="METHOD_NAME" value="testImmutable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BoxAndShelfTester" />
-        <item itemvalue="Application.UserNameGeneratorTester" />
-        <item itemvalue="Application.BankApplication (1)" />
-        <item itemvalue="Application.StreamTester" />
+        <item itemvalue="Java Scratch.Scratch" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.CarTest" />
+        <item itemvalue="JUnit.CarTest.testImmutable" />
         <item itemvalue="Application.LambdaTester" />
       </list>
     </recent_temporary>
@@ -177,34 +300,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584794030290</updated>
-    </task>
-    <task id="LOCAL-00032" summary="assignment 6, Beer, Laptop">
-      <created>1587220635695</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1587220635695</updated>
-    </task>
-    <task id="LOCAL-00033" summary="assignment 6, ArrayList vs LinkedList, UniqueLetters">
-      <created>1587220717517</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1587220717517</updated>
-    </task>
-    <task id="LOCAL-00034" summary="assignment 6, Selection Sort">
-      <created>1587228052855</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1587228052855</updated>
-    </task>
-    <task id="LOCAL-00035" summary="assignment 6, Selection Sort">
-      <created>1587228159949</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1587228159949</updated>
     </task>
     <task id="LOCAL-00036" summary="assignment 6, Selection Sort for Lists">
       <created>1587283641510</created>
@@ -521,13 +616,38 @@
       <option name="project" value="LOCAL" />
       <updated>1589824494021</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="assignment 9, helper method with generic method">
+      <created>1589828762703</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1589828762704</updated>
+    </task>
+    <task id="LOCAL-00082" summary="assignment 9, helper method with generic method">
+      <created>1590254985339</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1590254985339</updated>
+    </task>
+    <task id="LOCAL-00083" summary="assignment 12, Immutable Car">
+      <created>1590945409497</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1590945409497</updated>
+    </task>
+    <task id="LOCAL-00084" summary="assignment 11, Builder Pattern with FeatureStructure">
+      <created>1590950879472</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1590950879472</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="assignment 6, Merge Sort" />
-    <MESSAGE value="assignment 6, Laptop deep cloning v2" />
-    <MESSAGE value="assignment 6, MergeSort improvements" />
     <MESSAGE value="assignment 7, OnlineStore" />
     <MESSAGE value="assignment 7, LetterCounter" />
     <MESSAGE value="assignment 7, AutoService" />
@@ -550,25 +670,48 @@
     <MESSAGE value="assignment 10, implementation of Optional&lt;Bank&gt; and Optional&lt;Account&gt;" />
     <MESSAGE value="assignment 10, UserNamePassword v2" />
     <MESSAGE value="assignment 9, helper method with lambda" />
-    <option name="LAST_COMMIT_MESSAGE" value="assignment 9, helper method with lambda" />
+    <MESSAGE value="assignment 9, helper method with generic method" />
+    <MESSAGE value="assignment 12, Immutable Car" />
+    <MESSAGE value="assignment 11, Builder Pattern with FeatureStructure" />
+    <option name="LAST_COMMIT_MESSAGE" value="assignment 11, Builder Pattern with FeatureStructure" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="0" width="1012" height="872" key="#Intentions" timestamp="1586001683028">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="0" y="0" width="1012" height="872" key="#Intentions/0.0.1368.872@0.0.1368.872" timestamp="1586001683028" />
-    <state x="682" y="107" key="#com.intellij.ide.util.MemberChooser" timestamp="1589651135750">
+    <state x="177" y="16" key="#Plugins" timestamp="1590224845684">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="682" y="107" key="#com.intellij.ide.util.MemberChooser/0.0.1368.872@0.0.1368.872" timestamp="1589651135750" />
-    <state x="454" y="311" width="459" height="257" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589750798086">
+    <state x="177" y="16" key="#Plugins/0.0.1368.872@0.0.1368.872" timestamp="1590224845684" />
+    <state x="178" y="16" key="#Project_Structure" timestamp="1590942688796">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="454" y="311" width="459" height="257" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1368.872@0.0.1368.872" timestamp="1589750798086" />
+    <state x="178" y="16" key="#Project_Structure/0.0.1368.872@0.0.1368.872" timestamp="1590942688796" />
+    <state x="682" y="107" key="#com.intellij.ide.util.MemberChooser" timestamp="1590941454545">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="682" y="107" key="#com.intellij.ide.util.MemberChooser/0.0.1368.872@0.0.1368.872" timestamp="1590941454545" />
+    <state x="352" y="183" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1589920900229">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="352" y="183" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1368.872@0.0.1368.872" timestamp="1589920900229" />
+    <state x="352" y="57" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1590938235168">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="352" y="57" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1368.872@0.0.1368.872" timestamp="1590938235168" />
+    <state x="454" y="311" width="459" height="257" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589995753179">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="454" y="311" width="459" height="257" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1368.872@0.0.1368.872" timestamp="1589995753179" />
     <state x="41" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589631764625">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="41" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1368.872@0.0.1368.872" timestamp="1589631764625" />
+    <state x="353" y="128" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589921008587">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="353" y="128" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1368.872@0.0.1368.872" timestamp="1589921008587" />
     <state x="353" y="128" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1589824321331">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -581,66 +724,70 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="388" y="276" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1368.872@0.0.1368.872" timestamp="1586529491922" />
-    <state x="285" y="0" key="CommitChangelistDialog2" timestamp="1589824493260">
+    <state x="285" y="0" key="CommitChangelistDialog2" timestamp="1590950877037">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="285" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1589824493260" />
-    <state x="416" y="140" key="FileChooserDialogImpl" timestamp="1587211838027">
+    <state x="285" y="0" key="CommitChangelistDialog2/0.0.1368.872@0.0.1368.872" timestamp="1590950877037" />
+    <state x="416" y="140" key="FileChooserDialogImpl" timestamp="1590245134601">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="416" y="140" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1587211838027" />
-    <state width="1314" height="223" key="GridCell.Tab.0.bottom" timestamp="1589828633755">
+    <state x="416" y="140" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1590245134600" />
+    <state width="1300" height="133" key="GridCell.Tab.0.bottom" timestamp="1590951199278">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="223" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1589828633755" />
-    <state width="1314" height="223" key="GridCell.Tab.0.center" timestamp="1589828633755">
+    <state width="1300" height="133" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1590951199278" />
+    <state width="1300" height="133" key="GridCell.Tab.0.center" timestamp="1590951199278">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="223" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1589828633755" />
-    <state width="1314" height="223" key="GridCell.Tab.0.left" timestamp="1589828633755">
+    <state width="1300" height="133" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1590951199278" />
+    <state width="1300" height="133" key="GridCell.Tab.0.left" timestamp="1590951199278">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="223" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1589828633755" />
-    <state width="1314" height="223" key="GridCell.Tab.0.right" timestamp="1589828633755">
+    <state width="1300" height="133" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1590951199278" />
+    <state width="1300" height="133" key="GridCell.Tab.0.right" timestamp="1590951199278">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="223" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1589828633755" />
-    <state width="1314" height="266" key="GridCell.Tab.1.bottom" timestamp="1587313916187">
+    <state width="1300" height="133" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1590951199278" />
+    <state width="1300" height="263" key="GridCell.Tab.1.bottom" timestamp="1590944937170">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="266" key="GridCell.Tab.1.bottom/0.0.1368.872@0.0.1368.872" timestamp="1587313916187" />
-    <state width="1314" height="266" key="GridCell.Tab.1.center" timestamp="1587313916187">
+    <state width="1300" height="263" key="GridCell.Tab.1.bottom/0.0.1368.872@0.0.1368.872" timestamp="1590944937170" />
+    <state width="1300" height="263" key="GridCell.Tab.1.center" timestamp="1590944937170">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="266" key="GridCell.Tab.1.center/0.0.1368.872@0.0.1368.872" timestamp="1587313916187" />
-    <state width="1314" height="266" key="GridCell.Tab.1.left" timestamp="1587313916186">
+    <state width="1300" height="263" key="GridCell.Tab.1.center/0.0.1368.872@0.0.1368.872" timestamp="1590944937170" />
+    <state width="1300" height="263" key="GridCell.Tab.1.left" timestamp="1590944937170">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="266" key="GridCell.Tab.1.left/0.0.1368.872@0.0.1368.872" timestamp="1587313916186" />
-    <state width="1314" height="266" key="GridCell.Tab.1.right" timestamp="1587313916187">
+    <state width="1300" height="263" key="GridCell.Tab.1.left/0.0.1368.872@0.0.1368.872" timestamp="1590944937170" />
+    <state width="1300" height="263" key="GridCell.Tab.1.right" timestamp="1590944937170">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1314" height="266" key="GridCell.Tab.1.right/0.0.1368.872@0.0.1368.872" timestamp="1587313916187" />
-    <state x="289" y="73" key="NewModule_or_Project.wizard" timestamp="1587211958026">
+    <state width="1300" height="263" key="GridCell.Tab.1.right/0.0.1368.872@0.0.1368.872" timestamp="1590944937170" />
+    <state x="103" y="14" key="Maven.ArtifactSearchDialog" timestamp="1590942804235">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="289" y="73" key="NewModule_or_Project.wizard/0.0.1368.872@0.0.1368.872" timestamp="1587211958026" />
-    <state x="593" y="102" key="RollbackChangesDialog" timestamp="1589650693042">
+    <state x="103" y="14" key="Maven.ArtifactSearchDialog/0.0.1368.872@0.0.1368.872" timestamp="1590942804235" />
+    <state x="289" y="73" key="NewModule_or_Project.wizard" timestamp="1590245179708">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="593" y="102" key="RollbackChangesDialog/0.0.1368.872@0.0.1368.872" timestamp="1589650693042" />
-    <state x="37" y="0" key="SettingsEditor" timestamp="1584890589187">
+    <state x="289" y="73" key="NewModule_or_Project.wizard/0.0.1368.872@0.0.1368.872" timestamp="1590245179708" />
+    <state x="593" y="102" key="RollbackChangesDialog" timestamp="1590257970830">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="37" y="0" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1584890589187" />
-    <state x="81" y="6" key="Vcs.Push.Dialog.v2" timestamp="1589828737094">
+    <state x="593" y="102" key="RollbackChangesDialog/0.0.1368.872@0.0.1368.872" timestamp="1590257970830" />
+    <state x="37" y="0" key="SettingsEditor" timestamp="1590946401795">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="81" y="6" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1589828737094" />
-    <state x="400" y="218" key="com.intellij.ide.util.TipDialog" timestamp="1589827919090">
+    <state x="37" y="0" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1590946401795" />
+    <state x="81" y="6" key="Vcs.Push.Dialog.v2" timestamp="1590950885125">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="400" y="218" key="com.intellij.ide.util.TipDialog/0.0.1368.872@0.0.1368.872" timestamp="1589827919090" />
+    <state x="81" y="6" key="Vcs.Push.Dialog.v2/0.0.1368.872@0.0.1368.872" timestamp="1590950885125" />
+    <state x="400" y="218" key="com.intellij.ide.util.TipDialog" timestamp="1590832670725">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="400" y="218" key="com.intellij.ide.util.TipDialog/0.0.1368.872@0.0.1368.872" timestamp="1590832670725" />
     <state x="208" y="332" key="com.intellij.ide.util.TipDialog/0.0.912.1328@0.0.912.1328" timestamp="1589827792091" />
     <state x="464" y="338" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587879104074">
       <screen x="0" y="0" width="1368" height="872" />
@@ -654,10 +801,10 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="353" y="164" width="661" height="556" key="extract.method.dialog/0.0.1368.872@0.0.1368.872" timestamp="1588699581076" />
-    <state x="0" y="0" key="new project wizard" timestamp="1584888724343">
+    <state x="0" y="0" key="new project wizard" timestamp="1589919731651">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="0" y="0" key="new project wizard/0.0.1368.872@0.0.1368.872" timestamp="1584888724343" />
+    <state x="0" y="0" key="new project wizard/0.0.1368.872@0.0.1368.872" timestamp="1589919731651" />
     <state x="368" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1587836317637">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
@@ -666,12 +813,15 @@
       <screen x="0" y="0" width="1368" height="872" />
     </state>
     <state x="259" y="196" key="run.anything.popup/0.0.1368.872@0.0.1368.872" timestamp="1586970240438" />
-    <state x="270" y="6" width="840" height="870" key="search.everywhere.popup" timestamp="1589649203216">
+    <state x="272" y="8" width="840" height="870" key="search.everywhere.popup" timestamp="1590224831442">
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state x="270" y="6" width="840" height="870" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1589649203216" />
+    <state x="272" y="8" width="840" height="870" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1590224831442" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/java_course$Test.ic" NAME="Test Coverage Results" MODIFIED="1590947080179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>assign11.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/java_course$MergeSortRandomArray.ic" NAME="MergeSortRandomArray Coverage Results" MODIFIED="1587293319367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>assign6.*</FILTER>
     </SUITE>
