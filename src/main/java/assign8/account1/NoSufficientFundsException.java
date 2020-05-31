@@ -1,11 +1,11 @@
-package assign8.account;
+package assign8.account1;
 
 import java.math.BigDecimal;
 
-public class ReachedCreditLimitException extends Exception {
+public class NoSufficientFundsException extends Exception {
     BigDecimal availableFunds;
 
-    public ReachedCreditLimitException(String message, BigDecimal availableFunds) {
+    public NoSufficientFundsException(String message, BigDecimal availableFunds) {
         super(message);
         this.availableFunds = availableFunds;
     }

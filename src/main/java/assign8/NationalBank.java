@@ -1,7 +1,6 @@
 package assign8;
 
-import assign8.account.Account;
-import assign8.account.AccountNotFoundException;
+import assign8.account1.Account;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -49,7 +48,7 @@ public class NationalBank {
         return false;
     }
 
-    public Optional<Account> getAccountByNumber(int accountNumber)  {
+    public Optional<Account> getAccountByNumber(int accountNumber) {
         for (Bank bank : banks) {
             if (bank.isAccountOpen(accountNumber)) {
                 return bank.getAccountByNumber(accountNumber);

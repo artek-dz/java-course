@@ -1,9 +1,9 @@
-package assign8.account;
+package assign8.account1;
 
-public class AccountNotFoundException extends Exception {
+public class AccountAlreadyExistsException extends Exception {
     private int accountNumber;
 
-    public AccountNotFoundException(String message, int accountNumber) {
+    public AccountAlreadyExistsException(String message, int accountNumber) {
         super(message);
         this.accountNumber = accountNumber;
     }

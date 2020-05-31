@@ -1,6 +1,9 @@
 package assign8;
 
-import assign8.account.*;
+import assign8.account1.Account;
+import assign8.account1.AccountAlreadyExistsException;
+import assign8.account1.CreditAccount;
+import assign8.account1.DebitAccount;
 
 import java.math.*;
 import java.util.*;

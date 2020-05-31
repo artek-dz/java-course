@@ -1,4 +1,4 @@
-package assign8.account;
+package assign8.account1;
 
 public class BankAccount {
     private long accountNumber;
