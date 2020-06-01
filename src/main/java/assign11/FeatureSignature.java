@@ -7,9 +7,9 @@ import static java.util.Collections.emptySet;
 public class FeatureSignature {
     private boolean atomic;
     private Set<AtomicValue> domain;
-    private Set<Feature.Name> scheme;
+    private Set<FeatureName> scheme;
 
-    private FeatureSignature(boolean atomic, Set<AtomicValue> domain, Set<Feature.Name> scheme) {
+    private FeatureSignature(boolean atomic, Set<AtomicValue> domain, Set<FeatureName> scheme) {
         this.atomic = atomic;
         this.domain = domain;
         this.scheme = scheme;
@@ -24,9 +24,9 @@ public class FeatureSignature {
     }
 
     public static FeatureSignature withScheme(String... names) {
-        Set<Feature.Name> scheme = new HashSet<>();
+        Set<FeatureName> scheme = new HashSet<>();
         for (String name : names) {
-            scheme.add(Feature.Name.with(name));
+            scheme.add(FeatureName.with(name));
         }
         return new FeatureSignature(false,emptySet(),scheme);
     }
@@ -39,7 +39,7 @@ public class FeatureSignature {
         return this.domain;
     }
 
-    public Set<Feature.Name> getScheme() {
+    public Set<FeatureName> getScheme() {
         return this.scheme;
     }
 }
