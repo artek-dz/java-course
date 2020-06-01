@@ -7,7 +7,7 @@ public class AtomicValue extends FeatureValue {
     private String value;
 
     private AtomicValue(int coindex, String value) {
-        super(coindex);
+        super(coindex, true);
         this.value = value;
     }
 
@@ -18,7 +18,6 @@ public class AtomicValue extends FeatureValue {
     public static AtomicValue with(int coindex, String value) {
         return new AtomicValue(coindex, value);
     }
-
 
 
     public String getValue() {

@@ -6,8 +6,12 @@ public class FeatureStructure extends FeatureValue {
     private Map<FeatureName, FeatureValue> features;
 
     private FeatureStructure(int coindex, Map<FeatureName, FeatureValue> features) {
-        super(coindex);
+        super(coindex, false);
         this.features = features;
+    }
+
+    public static Builder builder() {
+        return new FeatureStructure.Builder();
     }
 
     @Override
@@ -28,18 +32,9 @@ public class FeatureStructure extends FeatureValue {
         return featureSet;
     }
 
-    public static Builder builder() {
-        return new FeatureStructure.Builder();
-    }
-
     public static class Builder {
         private Map<FeatureName, FeatureValue> features = new HashMap<>();
         private Map<FeatureName, ValueReentry> reentries = new HashMap<>();
-
-        public Builder withReentry(String name, int coindex) {
-            if (coindex > -1) this.reentries.put(FeatureName.with(name), ValueReentry.with(coindex));
-            return this;
-        }
 
         public Builder withFeature(String name, String value) {
             return withFeature(name, -1, value);
@@ -47,7 +42,7 @@ public class FeatureStructure extends FeatureValue {
 
         public Builder withFeature(String name, int coindex, String value) {
             this.features.put(FeatureName.with(name), AtomicValue.with(coindex, value));
-            if (coindex > -1) this.reentries.put(FeatureName.with(name), ValueReentry.with(coindex));
+            if (coindex > -1) this.reentries.put(FeatureName.with(name), ValueReentry.with(coindex, true));
             return this;
         }
 
@@ -64,7 +59,7 @@ public class FeatureStructure extends FeatureValue {
                     fs.put(FeatureName.with(n), this.features.remove(FeatureName.with(n)));
                 }
             }
-            if (coindex > -1) this.reentries.put(FeatureName.with(name), ValueReentry.with(coindex));
+            if (coindex > -1) this.reentries.put(FeatureName.with(name), ValueReentry.with(coindex, false));
             this.features.put(FeatureName.with(name), new FeatureStructure(coindex, fs));
             return this;
         }
