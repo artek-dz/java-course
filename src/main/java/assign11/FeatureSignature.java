@@ -2,7 +2,9 @@ package assign11;
 
 import java.util.*;
 
-public final class FeatureSignature {
+import static java.util.Collections.emptySet;
+
+public class FeatureSignature {
     private boolean atomic;
     private Set<AtomicValue> domain;
     private Set<Feature.Name> scheme;
@@ -18,7 +20,7 @@ public final class FeatureSignature {
         for (String value : values) {
             domain.add(AtomicValue.with(value));
         }
-        return new FeatureSignature(true,domain,Set.of());
+        return new FeatureSignature(true,domain,emptySet());
     }
 
     public static FeatureSignature withScheme(String... names) {
@@ -26,18 +28,18 @@ public final class FeatureSignature {
         for (String name : names) {
             scheme.add(Feature.Name.with(name));
         }
-        return new FeatureSignature(false,Set.of(),scheme);
+        return new FeatureSignature(false,emptySet(),scheme);
     }
 
     public boolean isAtomic() {
-        return atomic;
+        return this.atomic;
     }
 
     public Set<AtomicValue> getDomain() {
-        return domain;
+        return this.domain;
     }
 
     public Set<Feature.Name> getScheme() {
-        return scheme;
+        return this.scheme;
     }
 }
