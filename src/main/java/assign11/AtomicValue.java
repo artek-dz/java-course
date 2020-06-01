@@ -2,12 +2,12 @@ package assign11;
 
 import java.util.Objects;
 
-public class AtomicValue implements FeatureValue {
-    private int coindex;
+public class AtomicValue extends FeatureValue {
+
     private String value;
 
     private AtomicValue(int coindex, String value) {
-        this.coindex = (coindex < 0 ? -1 : coindex);
+        super(coindex);
         this.value = value;
     }
 
@@ -19,10 +19,7 @@ public class AtomicValue implements FeatureValue {
         return new AtomicValue(coindex, value);
     }
 
-    @Override
-    public int getCoindex() {
-        return this.coindex;
-    }
+
 
     public String getValue() {
         return value;
@@ -30,7 +27,7 @@ public class AtomicValue implements FeatureValue {
 
     @Override
     public String toString() {
-        return (coindex < 0 ? "" : "(" + coindex + ")") + value;
+        return super.toString() + value;
     }
 
     @Override

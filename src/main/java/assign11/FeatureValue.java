@@ -1,8 +1,18 @@
 package assign11;
 
-public interface FeatureValue {
+public abstract class FeatureValue {
+    private int coindex;
 
-    int getCoindex();
+    protected FeatureValue(int coindex) {
+        this.coindex = (coindex < 0 ? -1 : coindex);
+    }
 
+    public int getCoindex() {
+        return this.coindex;
+    }
 
+    @Override
+    public String toString() {
+        return (coindex < 0 ? "" : "(" + coindex + ")");
+    }
 }

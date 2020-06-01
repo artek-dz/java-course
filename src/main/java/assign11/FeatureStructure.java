@@ -2,23 +2,17 @@ package assign11;
 
 import java.util.*;
 
-public class FeatureStructure implements FeatureValue {
-    private int coindex;
+public class FeatureStructure extends FeatureValue {
     private Map<FeatureName, FeatureValue> features;
 
     private FeatureStructure(int coindex, Map<FeatureName, FeatureValue> features) {
-        this.coindex = (coindex < 0 ? -1 : coindex);
+        super(coindex);
         this.features = features;
     }
 
     @Override
-    public int getCoindex() {
-        return this.coindex;
-    }
-
-    @Override
     public String toString() {
-        return (coindex < 0 ? "" : "(" + coindex + ")") + features.toString()
+        return super.toString() + features.toString()
                 .replace("{", "[ ")
                 .replace("}", " ]")
                 .replace("=", " : ");
